@@ -6,14 +6,17 @@ var settings = {
 	opacityRange:[.01, .1], 
 	widthRange:[1,20],
 	showMap:false, 
-	dataFile:'data/data_Monday.csv',
-	// color:'rgb(9, 240, 232)'
+	dataFile:'data/data_by_hour.csv',
 	color:'blue', 
-	backgroundColor:'white'
+	backgroundColor:'black', 
+	interval:4000, 
+	disappear:false,
+	disappearTime:6000,
 }
 var data,map,widthScale, opacityScale, routes;
 var drawMap = function () {
 	d3.select('#map').style('background-color', settings.backgroundColor)
+	d3.select('body').style('background-color', settings.backgroundColor)
 	var center =  [41.88515423727906, -87.65544891357422]
 	var zoom = 12
 	L.mapbox.accessToken = 'pk.eyJ1IjoibWljaGFlbGZyZWVtYW4iLCJhIjoibE5leG9MRSJ9.YHTl3OfWurGattFSUzwhag';
@@ -28,27 +31,18 @@ var drawMap = function () {
 	   
 
 	getScale()
-	drawLines()
+	drawLinesByHour()
 
 }
 
 
 var getData = function(callback) {
-	// getRoutes(
 		d3.csv(settings.dataFile, function(error, dat){
 			data = dat
 			if(typeof callback == 'function') callback()
 		})
-	// )
 }
 
-// var getRoutes = function(callback) {
-// 	console.log('get routes')
-// 	d3.csv('data/formatted_routes.csv', function(error, dat){
-// 		routes = dat
-// 		if(typeof callback == 'function') callback()
-// 	})
-// }
 
 var getScale = function() {
 	var max = d3.max(data, function(d) {return Number(d.freq)})
@@ -56,56 +50,53 @@ var getScale = function() {
 	opacityScale = d3.scale.linear().range(settings.opacityRange).domain([1,max])
 }
 
-var drawLines = function() {
-	// var mapData = data.filter(function(d){return d.month == 1})
-	data.map(function(d,i){
+var drawLines = function(dat) {
+	console.log('draw lines with ', dat)
+	dat.map(function(d,i){
 		if(i>1000) return
-		// var opacity = settings.encodeOpacity == true ? opacityScale(Number(d.freq)) : settings.defaultOpacity
-		// var weight = settings.encodeWidth == true ? widthScale(Number(d.freq)) : settings.defaultWidth
-		// var txt = data[i].route
-		// if(txt.slice(-1)==",")txt = txt.substring(0, txt.length - 1);
-		// var pointList = JSON.parse("[" + txt +"]")
-		// var polygon = L.polyline(pointList, {weight:weight, opacity:opacity, color:'gray'}).addTo(map);
 		animateLine(d,i)
 	})	
 }
 
+var drawLinesByHour= function() {
+	var hour = 6
+	var startDrawing = function() {
+		var dat = data.filter(function(dd) {return Number(dd.hour) == Number(hour)})
+		drawLines(dat)
+		if (++hour < 24) {
+			window.setTimeout(startDrawing, settings.interval)
+		}
+	}
+	window.setTimeout(startDrawing, 500)
+	// d3.range(0,25).map(function(d){
+		// var dat = data.filter(function(dd) {return Number(dd.hour) == Number(hour)})
+
+	// })
+}
+var test
 var animateLine = function(dat, index) {
 	var opacity = settings.encodeOpacity == true ? opacityScale(Number(dat.freq)) : settings.defaultOpacity
 	var weight = settings.encodeWidth == true ? widthScale(Number(dat.freq)) : settings.defaultWidth
-	var polyline = L.polyline([], {weight:weight, opacity:opacity, color:'gray'}).addTo(map);
-	var pointsAdded = 0
+	var polyline = L.polyline([], {weight:weight, opacity:1, color:settings.color}).addTo(map);
+	var pointsAdded = 1
 	var txt = data[index].route
 	if(txt.slice(-1)==",")txt = txt.substring(0, txt.length - 1);
 	var pointList = JSON.parse("[" + txt +"]")
-	var increment = 10
+	test = pointList
+	var delay = 10
+	var increment = Math.ceil(pointList.length/settings.interval)*delay
+	// console.log(' length ', pointList.length, 'increment ', increment, ' delay ', delay)
 	var add = function() {
-		// console.log('add function ', pointsAdded)
-		polyline.addLatLng(
-	        L.latLng(
-	            pointList[pointsAdded],
-	            pointsAdded)
-	        )
-		// var pointsAdded = pointsAdded + increment >= pointList.length ? pointList.length - 2 : pointsAdded + increment
-		if (++pointsAdded < pointList.length) window.setTimeout(add, .1);
+		var latLongData =  pointList.slice(0, pointsAdded).map(function(d){return L.latLng(d)})
+		polyline.setLatLngs(
+	        latLongData
+		)
+		pointsAdded = pointsAdded + increment > pointList.length ? pointList.length :  pointsAdded + increment 
+		if (pointsAdded < pointList.length) window.setTimeout(add, delay);
+		else {
+			polyline.setStyle({opacity:.1})
+			if(settings.disappear == true) window.setTimeout(function() {map.removeLayer(polyline)}, settings.disappearTime)
+		}
 	}
-	// console.log(++pointsAdded, pointList.length)
 	add()
-	// if (++pointsAdded < pointList.length) window.setTimeout(add, 10);
 }
-// var getSum = function() {
-// 	var ret = {}
-// 	data.map(function(d){
-// 		if(ret[d.stationFromId] == undefined) ret[d.stationFromId] = Number(d.freq)
-// 		else ret[d.stationFromId] += Number(d.freq)
-// 	})
-// 	return ret
-// }
-// var drawPoints = function() {
-// 	var points = getSum()
-// 	var circleMax = d3.max(d3.values(points), function(d) {return d.freq})
-// 	var circleScale = d3.scale.squared().range([1,10]).domain([1,circleMax])
-// 	d3.values(points).map(function(d) {
-// 		var point = L.polyline(pointList, {weight:weight, opacity:opacity, color:'gray'}).addTo(map);
-// 	})
-// }
