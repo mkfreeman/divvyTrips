@@ -5,21 +5,23 @@
 	- Somehow remove lines that are already there.... or add to them.  
 	- Put on chloropleth poverty map?
 */
-
+var totalRiders
 var settings = {
 	encodeOpacity:false, 
-	encodeWidth:true, 
+	encodeWidth:false, 
 	defaultOpacity:.5,
-	defaultWidth:3,
+	finalOpacity:.2,
+	defaultWidth:2,
 	opacityRange:[.01, .1], 
 	widthRange:[1,20],
 	showMap:false, 
-	dataFile:'data/data_by_minute.csv',
-	color:'blue', 
+	dataFile:'data/data_start_stop.csv',
+	color:'white', 
 	backgroundColor:'black', 
-	interval:2000, 
+	timeFactor:5,
+	interval:10000, 
 	disappear:true,
-	disappearTime:0,
+	disappearTime:1000,
 }
 var data,map,widthScale, opacityScale, routes;
 var lines = {}
@@ -40,7 +42,6 @@ var drawMap = function () {
 	   
 
 	getScale()
-	// drawLinesByHour()
 	drawLinesByMinute()
 
 }
@@ -61,9 +62,7 @@ var getScale = function() {
 }
 
 var drawLines = function(dat) {
-	console.log('draw lines with ', dat)
 	dat.map(function(d,i){
-		if(i>1000) return
 		animateLine(d,i)
 	})	
 }
@@ -82,15 +81,15 @@ var drawLinesByHour= function() {
 
 
 var drawLinesByMinute= function() {
-	var totalMinutes = 60 * 24
+	var totalMinutes = 60*24
 	var minute = 0
 	var startDrawing = function() {
-		var dat = data.filter(function(dd) {return Number(dd.minute) == Number(minute)})
-		console.log('obs. ', dat.length)
+		var dat = data.filter(function(dd) {return Number(dd.startMinute) == Number(minute)})
+		totalRiders += dat.length
 		drawLines(dat)
-		minute += 10
+		minute += 1
 		if (minute < totalMinutes) {
-			window.setTimeout(startDrawing, 100)
+			window.setTimeout(startDrawing, 1*settings.timeFactor)
 		}
 	}
 	window.setTimeout(startDrawing, 500)
@@ -98,25 +97,29 @@ var drawLinesByMinute= function() {
 
 var test
 var animateLine = function(dat, index) {
+	// console.log(dat)
 	var opacity = settings.encodeOpacity == true ? opacityScale(Number(dat.freq)) : settings.defaultOpacity
 	var weight = settings.encodeWidth == true ? widthScale(Number(dat.freq)) : settings.defaultWidth
-	var polyline = L.polyline([], {weight:weight, opacity:1, color:settings.color}).addTo(map);
-	var pointsAdded = 1
-	var txt = data[index].route
+	var polyline = L.polyline([], {weight:weight, opacity:settings.defaultOpacity, color:settings.color}).addTo(map);
+	var txt = dat.route
 	if(txt.slice(-1)==",")txt = txt.substring(0, txt.length - 1);
 	var pointList = JSON.parse("[" + txt +"]")
-	test = pointList
-	var delay = 10
-	var increment = Math.ceil(pointList.length/settings.interval)*delay
+	var points = pointList.length
+	var time = (dat.stopMinute - dat.startMinute )*settings.timeFactor
+	var strokes = time >= points ? points : time
+	var length = Math.ceil(points/time)
+	var pointsAdded = length
+	var delay = time<points ? 1 : Math.floor((time - points) / points)
 	var add = function() {
+		// console.log(' totalPoints ', points,  ' totalTime ', time, ' delay ', delay, ' stroke length ', length, ' current length ', pointsAdded)
 		var latLongData =  pointList.slice(0, pointsAdded).map(function(d){return L.latLng(d)})
 		polyline.setLatLngs(
 	        latLongData
 		)
-		pointsAdded = pointsAdded + increment > pointList.length ? pointList.length :  pointsAdded + increment 
-		if (pointsAdded < pointList.length) window.setTimeout(add, delay);
+		pointsAdded = pointsAdded + length > points ? points :  pointsAdded + length 
+		if (pointsAdded < points ) window.setTimeout(add, delay);
 		else {
-			polyline.setStyle({opacity:.1})
+			polyline.setStyle({opacity:settings.finalOpacity})
 			if(settings.disappear == true) window.setTimeout(function() {map.removeLayer(polyline)}, settings.disappearTime)
 		}
 	}
