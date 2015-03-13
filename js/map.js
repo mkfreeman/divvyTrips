@@ -1,3 +1,11 @@
+// To do
+/*
+	- Compute scales based on # to and from (not just # by minute)
+	- Add hovers?
+	- Somehow remove lines that are already there.... or add to them.  
+	- Put on chloropleth poverty map?
+*/
+
 var settings = {
 	encodeOpacity:false, 
 	encodeWidth:true, 
@@ -6,14 +14,15 @@ var settings = {
 	opacityRange:[.01, .1], 
 	widthRange:[1,20],
 	showMap:false, 
-	dataFile:'data/data_by_hour.csv',
+	dataFile:'data/data_by_minute.csv',
 	color:'blue', 
 	backgroundColor:'black', 
-	interval:4000, 
-	disappear:false,
-	disappearTime:6000,
+	interval:2000, 
+	disappear:true,
+	disappearTime:0,
 }
 var data,map,widthScale, opacityScale, routes;
+var lines = {}
 var drawMap = function () {
 	d3.select('#map').style('background-color', settings.backgroundColor)
 	d3.select('body').style('background-color', settings.backgroundColor)
@@ -31,7 +40,8 @@ var drawMap = function () {
 	   
 
 	getScale()
-	drawLinesByHour()
+	// drawLinesByHour()
+	drawLinesByMinute()
 
 }
 
@@ -68,11 +78,24 @@ var drawLinesByHour= function() {
 		}
 	}
 	window.setTimeout(startDrawing, 500)
-	// d3.range(0,25).map(function(d){
-		// var dat = data.filter(function(dd) {return Number(dd.hour) == Number(hour)})
-
-	// })
 }
+
+
+var drawLinesByMinute= function() {
+	var totalMinutes = 60 * 24
+	var minute = 0
+	var startDrawing = function() {
+		var dat = data.filter(function(dd) {return Number(dd.minute) == Number(minute)})
+		console.log('obs. ', dat.length)
+		drawLines(dat)
+		minute += 10
+		if (minute < totalMinutes) {
+			window.setTimeout(startDrawing, 100)
+		}
+	}
+	window.setTimeout(startDrawing, 500)
+}
+
 var test
 var animateLine = function(dat, index) {
 	var opacity = settings.encodeOpacity == true ? opacityScale(Number(dat.freq)) : settings.defaultOpacity
@@ -85,7 +108,6 @@ var animateLine = function(dat, index) {
 	test = pointList
 	var delay = 10
 	var increment = Math.ceil(pointList.length/settings.interval)*delay
-	// console.log(' length ', pointList.length, 'increment ', increment, ' delay ', delay)
 	var add = function() {
 		var latLongData =  pointList.slice(0, pointsAdded).map(function(d){return L.latLng(d)})
 		polyline.setLatLngs(
