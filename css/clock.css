@@ -1,0 +1,12 @@
+#clock {
+	color:#2FCAFC;
+	bottom:20px;
+	position:absolute;
+	right:20px;
+	z-index:9999;
+}
+
+#clock div{
+	display: inline-block;
+	font-family: helvetica;
+}

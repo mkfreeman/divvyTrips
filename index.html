@@ -8,6 +8,8 @@
        
         <!-- Add D3 JavaSript files -->
         <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
         
         
 
@@ -18,21 +20,20 @@
          <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
 
         <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
-        <!-- <script src="lib/dvf/leaflet-dvf.js"></script>
-        <script src="lib/dvf/leaflet-dvf-experimental.js"></script> -->
-        <!-- // <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.8/leaflet-dvf.markers.js"></script> -->
-         <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/settings.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/clock.js"></script>
 
-
+        <!-- CSS files -->
         <link rel="stylesheet" href="css/map.css"></link>
+        <link rel="stylesheet" href="css/clock.css"></link>
         
 	</head>
 	<body>
-		<div id="container">
-            <div id="map"></div>
-        </div>
+		<div id="container"></div>
          <script type="text/javascript">
             // drawMap()
+            var clock = new Clock()
             getData(drawMap)
          </script>
     </body>
