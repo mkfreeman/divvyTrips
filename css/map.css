@@ -1,7 +1,12 @@
 #map { 
 	top:10px;
+	background-color: black;
  }
 
+body{
+	background-color:black;
+	overflow: hidden;
+}
 
 .leaflet-control-layers-toggle {
   background-position: 1 1px !important; 
@@ -22,7 +27,7 @@
 }
 
 #container {
-	height:100%;
+	height:calc(100% - 46px);
 }
 
 .leaflet-control-zoom.leaflet-bar.leaflet-control{
@@ -31,4 +36,29 @@
 
 .leaflet-top.leaflet-left a{
 	background-color: rgb(78,78,78);
+}
+
+#header {
+	text-align: center;
+}
+
+#top-right {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#label {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	z-index: 9999;
+	font-family:helvetica;
+	font-size:40px;
+	color:rgb(212,212,212);
+}
+
+#label div {
+	display: inline-block;
 }

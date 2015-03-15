@@ -7,7 +7,7 @@
 var data,map,widthScale, opacityScale, routes;
 var lines = {}
 var drawMap = function () {
-	var height = $('#container').innerHeight()*.9
+	var height = $('#container').innerHeight() - $('#header').height()
 	d3.select('#' + settings.container).append('div').attr('id', settings.id).style('height', height + 'px')
 	d3.select('#map').style('background-color', settings.backgroundColor)
 	d3.select('body').style('background-color', settings.backgroundColor)
@@ -28,8 +28,11 @@ var drawMap = function () {
 	if(settings.showMap == true) {
 		map.addLayer(mapboxTiles)	
 	}
-	drawLinesByMinute()
-
+	
+	d3.select('#label-left').append('text').text('Chicago')
+	d3.select('#label-middle').append('text').text('bikers')
+	d3.select('#label-right').append('text').text('(6/28/2014)')
+	window.setTimeout(function() {d3.select('#label').transition().duration(2000).style('opacity', 0).each('end', function() {drawLinesByMinute()})}, 2000)
 }
 
 
@@ -45,11 +48,13 @@ var getData = function(callback) {
 var drawLinesByMinute= function() {
 	var totalMinutes = settings.totalMinutes
 	var minute = settings.startMinute
-	console.log(totalMinutes, minute)
 	var startDrawing = function() {
 		data.filter(function(dd) {return Number(dd.startMinute) == Number(minute)}).map(function(d) {animateLine(d)})
 		clock.setMinute(minute)
 		minute += 1
+		if(settings.speedUp == true) {
+			if(settings.timeFactor > settings.maxSpeed) settings.timeFactor += settings.speedChange
+		}
 		if (minute < totalMinutes) {
 			window.setTimeout(startDrawing, 1*settings.timeFactor)
 		}
@@ -80,10 +85,9 @@ var animateLine = function(dat, index) {
 		if (pointsAdded < points ) window.setTimeout(add, delay);
 		else {
 			polyline.setStyle({opacity:settings.finalOpacity})
-			if(settings.disappear == true) window.setTimeout(function() {
-				polyline.setStyle({opacity:.05})
-				window.setTimeout(function() {map.removeLayer(polyline)}, 100)
-			}, settings.disappearTime)
+			if(settings.disappear == true) {
+				window.setTimeout(function() {map.removeLayer(polyline)}, settings.disappearTime)
+			}
 		}
 	}
 	add()
