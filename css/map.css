@@ -62,3 +62,78 @@ body{
 #label div {
 	display: inline-block;
 }
+
+#slider {
+	position:absolute;
+	bottom:20px;
+	width:50%;
+	left:25%;
+	background:rgb(70, 76, 70) !important;
+	
+}
+
+.ui-slider-handle {
+	width:60px !important;
+	font-size:12px;
+	cursor:pointer !important;
+}
+
+
+#slider {
+	position: relative;
+	top:-5px;
+	height:5px;
+	background: #88b7d5;
+	border: 1px solid #c2e1f5;
+
+}
+#slider span {
+	color:white;	
+}
+
+.ui-slider-handle {
+	position: relative;
+	top:-22px !important;
+	background: #30302f !important;
+	border: 1px solid #2FCAFC !important;
+}
+.ui-slider-handle:after, .ui-slider-handle:before {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+#slider span {
+	text-align:center;
+	padding:1px !important;
+}
+
+.ui-slider-handle:after {
+	border-color: rgba(48, 48, 47, 0);
+	border-top-color: #30302f;
+	border-width: 11px;
+	margin-left: -11px;
+}
+.ui-slider-handle:before {
+	border-color: rgba(42, 130, 245, 0);
+	border-top-color: #2FCAFC;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+.ui-slider .ui-slider-handle:focus { outline: none !important; }
+.ui-slider a {outline:none !important;}
+.ui-state-active a, .ui-state-focus span {
+    outline: none !important;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+  top: -.4em;
+  width: 60px;
+  margin-left: -2.6em;
+}

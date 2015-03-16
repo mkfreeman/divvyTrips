@@ -4,7 +4,7 @@
 	- Date selector?
 	- Put on chloropleth poverty map?
 */
-var data,map,widthScale, opacityScale, routes;
+var data,map,widthScale, opacityScale, routes, timeFactor;
 var lines = {}
 var drawMap = function () {
 	var height = $('#container').innerHeight() - $('#header').height()
@@ -37,46 +37,75 @@ var drawMap = function () {
 
 
 var getData = function(callback) {
+	if(settings.dataSource == 'database') {
+		$.ajax({
+			url:'php/getData.php',
+			type: "get",
+			data:{
+				  date:settings.date,
+			}, 
+			success:function(dat) {
+				data = dat.data
+				if(typeof(callback) == 'function') callback()
+			}, 
+			error:function(){
+				console.log('error')
+			},
+			dataType:"json"
+		})
+	}
+	else {
 		d3.csv(settings.dataFile, function(error, dat){
 			data = dat
 			if(typeof callback == 'function') callback()
 		})
+	}
+		
 }
 
-
+var getRoutes = function(callback) {
+		d3.csv(settings.routeFile, function(error, dat){
+			routes = dat
+			if(typeof callback == 'function') callback()
+		})
+}
 
 var drawLinesByMinute= function() {
 	var totalMinutes = settings.totalMinutes
 	var minute = settings.startMinute
+	timeFactor = settings.timeFactor
+	settings.stopDrawing = false
 	var startDrawing = function() {
+		if(settings.stopDrawing == true) return
 		data.filter(function(dd) {return Number(dd.startMinute) == Number(minute)}).map(function(d) {animateLine(d)})
 		clock.setMinute(minute)
 		minute += 1
 		if(settings.speedUp == true) {
-			if(settings.timeFactor > settings.maxSpeed) settings.timeFactor += settings.speedChange
+			if(timeFactor > settings.maxSpeed) timeFactor += settings.speedChange
 		}
 		if (minute < totalMinutes) {
-			window.setTimeout(startDrawing, 1*settings.timeFactor)
+			window.setTimeout(startDrawing, 1*timeFactor)
 		}
 	}
 	window.setTimeout(startDrawing, 500)
 }
-
+var test;
 var animateLine = function(dat, index) {
+	test = dat;
 	var opacity = settings.encodeOpacity == true ? opacityScale(Number(dat.freq)) : settings.defaultOpacity
 	var weight = settings.encodeWidth == true ? widthScale(Number(dat.freq)) : settings.defaultWidth
 	var polyline = L.polyline([], {weight:weight, opacity:settings.defaultOpacity, color:settings.color}).addTo(map);
 	var txt = dat.route
 	if(txt.slice(-1)==",")txt = txt.substring(0, txt.length - 1);
+	if(txt.slice(-1)!="]")txt = txt + ']'
 	var pointList = JSON.parse("[" + txt +"]")
 	var points = pointList.length
-	var time = (dat.stopMinute - dat.startMinute )*settings.timeFactor
+	var time = (dat.stopMinute - dat.startMinute )*timeFactor
 	var strokes = time >= points ? points : time
 	var length = Math.ceil(points/time)
 	var pointsAdded = length
 	var delay = time<points ? 1 : Math.floor((time - points) / points)
 	var add = function() {
-		// console.log(' totalPoints ', points,  ' totalTime ', time, ' delay ', delay, ' stroke length ', length, ' current length ', pointsAdded)
 		var latLongData =  pointList.slice(0, pointsAdded).map(function(d){return L.latLng(d)})
 		polyline.setLatLngs(
 	        latLongData
