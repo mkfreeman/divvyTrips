@@ -14,7 +14,7 @@ var settings = {
 	routeFile:'data/formatted_routes.csv',
 	color:'#2FCAFC', 
 	backgroundColor:'black', 
-	dataSource:'database',
+	dataSource:'csv',
 	timeFactor:150,
 	maxSpeed:10,
 	speedChange: -1,
