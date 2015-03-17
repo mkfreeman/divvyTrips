@@ -16,7 +16,7 @@ var drawMap = function () {
 	d3.select('#map').style('background-color', settings.backgroundColor)
 	d3.select('body').style('background-color', settings.backgroundColor)
 
-	L.mapbox.accessToken = 'pk.eyJ1IjoibWljaGFlbGZyZWVtYW4iLCJhIjoibE5leG9MRSJ9.YHTl3OfWurGattFSUzwhag';
+	L.mapbox.accessToken = settings.accessToken;
 	
 	var mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/michaelfreeman.lc5jblfh/{z}/{x}/{y}.png?access_token=' + L.mapbox.accessToken, {
 	    attribution: '<a href="http://www.mapbox.com/about/maps/" target="_blank">Terms &amp; Feedback</a>'
@@ -82,37 +82,31 @@ var getStationValues = function() {
 		if(stationValues[station] == undefined) stationValues[station] = 1
 		else stationValues[station] += 1
 	})
-	var max = d3.max(d3.keys(stationValues), function(d) {return stationValues[d]})
-	var min = d3.min(d3.keys(stationValues), function(d) {return stationValues[d]})
-	stationScale = d3.scale.sqrt().range([settings.minRadius, settings.maxRadius]).domain([min,max])
+	// var max = d3.max(d3.keys(stationValues), function(d) {return stationValues[d]})
+	// var min = d3.min(d3.keys(stationValues), function(d) {return stationValues[d]})
+	// stationScale = d3.scale.sqrt().range([settings.minRadius, settings.maxRadius]).domain([min,max])
 }
 
 var drawStations = function() {
 	getStationValues()
 	stations.map(function(d){
 		var val = stationValues[d.id]
-		if(val == undefined) return
-		var size = settings.sizeStations == true ? stationScale(val):settings.defaultRadius
-		var size = 1
+		if(val == undefined | circles[d.id] != undefined) return
+		// var size = settings.sizeStations == true ? stationScale(val):settings.defaultRadius
+		var size = 40
 		var text = '<b>' + d.name + ':</b> ' + val + ' riders'
 		circles[d.id] = L.circle([d.latitude, d.longitude], size, {
-		    color: 'black',
-		    stroke:false,
+		    color: 'white',
+		    stroke:true,
 		    weight:1,
-		    fillColor: 'gray',
-		    fillOpacity: .3, 
-		    opacity:.3
+		    fillColor: 'white',
+		    fillOpacity: .25, 
+		    opacity:.25
 		}).bindPopup(text).addTo(circleGroup);	
 	})
 	
 }
 
-// var getRoutes = function(callback) {
-// 	d3.csv(settings.routeFile, function(error, dat){
-// 		routes = dat
-// 		if(typeof callback == 'function') callback()
-// 	})
-// }
 
 var drawLinesByMinute= function() {
 	var totalMinutes = settings.totalMinutes
@@ -133,9 +127,8 @@ var drawLinesByMinute= function() {
 	}
 	window.setTimeout(startDrawing, 500)
 }
-var test;
+
 var animateLine = function(dat, index) {
-	test = dat;
 	var opacity = settings.encodeOpacity == true ? opacityScale(Number(dat.freq)) : settings.defaultOpacity
 	var weight = settings.encodeWidth == true ? widthScale(Number(dat.freq)) : settings.defaultWidth
 	var polyline = L.polyline([], {weight:weight, opacity:settings.defaultOpacity, color:settings.color}).addTo(lineGroup);
@@ -159,15 +152,19 @@ var animateLine = function(dat, index) {
 		else {
 			polyline.setStyle({opacity:settings.finalOpacity})
 			if(settings.disappear == true) {
-				// window.setTimeout(function() {map.removeLayer(polyline)}, settings.disappearTime)
 				map.removeLayer(polyline)
 			}
 			if(settings.growCircles == true) {
 				var id = dat.id.split('-')[1]
 				var rad = circles[id].getRadius()
+				var increase = rad > 200 ? 5000 : 10000
+				var area = Math.pow(rad,2)
+				var newArea = area + increase
+				var newRadius = Math.pow(newArea, .5)
 				var increment = rad > 200 ? 20 : 100
 				// console.log('station ', id, ' rad ', rad)
-				circles[id].setRadius(rad + increment)
+				circles[id].setRadius(newRadius)
+				// circles[id].setRadius(rad + increment)
 			}
 		}
 	}

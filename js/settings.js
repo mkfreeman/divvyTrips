@@ -1,10 +1,11 @@
 var settings = {
 	container:'container', 
 	id:'map',
+	accessToken:'pk.eyJ1IjoibWljaGFlbGZyZWVtYW4iLCJhIjoibE5leG9MRSJ9.YHTl3OfWurGattFSUzwhag',
 	date:'2014-6-30',
 	encodeOpacity:false, 
 	encodeWidth:false, 
-	defaultOpacity:.5,
+	defaultOpacity:.3,
 	defaultRadius:50,
 	finalOpacity:.2,
 	defaultWidth:2,
