@@ -1,0 +1,601 @@
+"","id","name","latitude","longitude"
+"1",43,"Michigan Ave & Washington St",41.88389277,-87.62464914
+"2",44,"State St & Randolph St",41.8847302,-87.62773357
+"3",33,"State St & Van Buren St",41.877181,-87.627844
+"4",199,"Wabash Ave & Grand Ave",41.891738,-87.626937
+"5",51,"Clark St & Randolph St",41.88457623,-87.63188991
+"6",98,"LaSalle St & Washington St",41.882664,-87.63253
+"7",286,"Franklin St & Quincy St",41.878724,-87.634793
+"8",90,"Millennium Park",41.8810317,-87.62408432
+"9",50,"Clark St & Congress Pkwy",41.87593267,-87.63058454
+"10",91,"Clinton St & Washington Blvd",41.88338,-87.64117
+"11",192,"Canal St & Adams St",41.878948,-87.63975
+"12",48,"Larrabee St & Kingsbury St",41.897764,-87.642884
+"13",100,"Orleans St & Merchandise Mart Plaza",41.888243,-87.63639
+"14",106,"State St & Pearson St",41.897448,-87.628722
+"15",211,"St Clair St & Erie St",41.894448,-87.622663
+"16",31,"Franklin St & Chicago Ave",41.89680204,-87.63563839
+"17",36,"Franklin St & Jackson Blvd",41.87770796,-87.63532114
+"18",37,"Dearborn St & Adams St",41.87935636,-87.62979104
+"19",66,"Clinton St & Lake St",41.88583274,-87.64138231
+"20",35,"Streeter Dr & Illinois St",41.891071,-87.6122
+"21",81,"Daley Center Plaza",41.884163,-87.629635
+"22",58,"Marshfield Ave & Cortland St",41.916017,-87.668879
+"23",344,"Wolcott Ave & Lawrence Ave",41.968641,-87.676335
+"24",108,"Halsted St & Polk St",41.87184,-87.64664
+"25",109,"900 W Harrison",41.874675,-87.650019
+"26",97,"Museum Campus",41.865212,-87.617759
+"27",5,"State St & Harrison St",41.87395806,-87.62773949
+"28",59,"Wabash Ave & Roosevelt Rd",41.867173,-87.62595501
+"29",283,"LaSalle St & Jackson Blvd",41.87817,-87.631985
+"30",84,"Green St & Milwaukee Ave",41.891733,-87.648727
+"31",25,"Michigan Ave & Pearson St",41.89766,-87.62351
+"32",197,"Michigan Ave & Madison St",41.882134,-87.625125
+"33",68,"Clinton St & Tilden St",41.875885,-87.640795
+"34",73,"Jefferson St & Monroe St",41.880422,-87.642746
+"35",56,"Desplaines St & Kinzie St",41.88871604,-87.64444785
+"36",45,"Michigan Ave & Congress Pkwy",41.8760656,-87.62443336
+"37",85,"Michigan Ave & Oak St",41.90096039,-87.62377664
+"38",52,"Michigan Ave & Lake St",41.886024,-87.624117
+"39",54,"Ogden Ave & Chicago Ave",41.89636246,-87.65406127
+"40",110,"State St & Erie St",41.893975,-87.628623
+"41",46,"Wells St & Walton St",41.89993001,-87.63443007
+"42",264,"Stetson Ave & South Water St",41.886835,-87.62232
+"43",49,"Dearborn St & Monroe St",41.88131982,-87.62952092
+"44",47,"State St & Kinzie St",41.88918,-87.6277
+"45",26,"McClurg Ct & Illinois St",41.89102,-87.6173
+"46",111,"Sedgwick St & Huron St",41.894666,-87.638437
+"47",112,"Green St & Randolph St",41.884078,-87.648684
+"48",321,"Wabash Ave & 8th St",41.871962,-87.626106
+"49",191,"Canal St & Monroe St",41.8807,-87.63947
+"50",287,"Franklin St & Arcade Pl",41.881469,-87.635177
+"51",60,"Dayton St & North Ave",41.91057803,-87.64942193
+"52",113,"Bissell St & Armitage Ave",41.91844,-87.65222
+"53",67,"Sheffield Ave & Fullerton Ave",41.92560188,-87.65370804
+"54",210,"Ashland Ave & Division St",41.903448,-87.669313
+"55",114,"Sheffield Ave & Addison St",41.94688,-87.65445
+"56",240,"Sheridan Rd & Irving Park Rd",41.954245,-87.654406
+"57",53,"Wells St & Erie St",41.893832,-87.634195
+"58",69,"Damen Ave & Pierce Ave",41.90939601,-87.67769193
+"59",13,"Wilton Ave & Diversey Pkwy",41.93250008,-87.65268082
+"60",115,"Sheffield Ave & Wellington Ave",41.936253,-87.653566
+"61",116,"Western Ave & Winnebago Ave",41.915533,-87.687051
+"62",117,"Wilton Ave & Belmont Ave",41.94018,-87.65304
+"63",118,"Sedgwick St & North Ave",41.910579,-87.638618
+"64",229,"Southport Ave & Roscoe St",41.943739,-87.66402
+"65",71,"Morgan St & Lake St",41.88548331,-87.65230486
+"66",119,"Ashland Ave & Lake St",41.88541,-87.66732
+"67",293,"Broadway & Wilson Ave",41.965485,-87.657238
+"68",120,"Wentworth Ave & Archer Ave",41.854564,-87.631937
+"69",32,"Racine Ave & Congress Pkwy",41.87464,-87.65703
+"70",330,"Lincoln Ave & Addison St",41.946176,-87.673308
+"71",230,"Lincoln Ave & Roscoe St",41.94334,-87.67097
+"72",261,"Hermitage Ave & Polk St",41.871514,-87.669886
+"73",122,"Ogden Ave & Congress Pkwy",41.87501,-87.67328
+"74",184,"State St & 35th St",41.83104,-87.62688
+"75",201,"Indiana Ave & 40th St",41.82168,-87.6216
+"76",123,"California Ave & Milwaukee Ave",41.922695,-87.697153
+"77",260,"Kedzie Ave & Milwaukee Ave",41.929567,-87.707857
+"78",271,"Cottage Grove Ave & 43rd St",41.816499,-87.606582
+"79",244,"Ravenswood Ave & Irving Park Rd",41.95469,-87.67393
+"80",205,"Paulina St & 18th St",41.857901,-87.668745
+"81",124,"Damen Ave & Cullerton St",41.855048,-87.675726
+"82",200,"King Dr & 47th St",41.809851,-87.616279
+"83",203,"Western Ave & 21st St",41.85394,-87.685243
+"84",238,"Ravenswood Ave & Montrose Ave",41.961626,-87.674101
+"85",242,"Damen Ave & Leland Ave",41.967094,-87.679028
+"86",348,"California Ave & 21st St",41.854016,-87.695445
+"87",280,"Morgan St & 31st St",41.8378,-87.65114
+"88",206,"Halsted St & Archer Ave",41.847203,-87.646795
+"89",202,"Halsted St & 18th St",41.857499,-87.646277
+"90",204,"Prairie Ave & Garfield Blvd",41.794853,-87.618691
+"91",338,"Calumet Ave & 18th St",41.857611,-87.619407
+"92",253,"Clifton Ave & Lawrence Ave",41.968873,-87.658857
+"93",62,"McCormick Place",41.85137517,-87.61883465
+"94",295,"Broadway & Argyle St",41.972972,-87.659637
+"95",294,"Broadway & Berwyn Ave",41.978353,-87.659753
+"96",239,"Western Ave & Leland Ave",41.966555,-87.688487
+"97",267,"Lake Park Ave & 47th St",41.809443,-87.591875
+"98",345,"Lake Park Ave & 56th St",41.793242,-87.587782
+"99",220,"Hampden Ct & Diversey Pkwy",41.93262,-87.642385
+"100",34,"Cannon Dr & Fullerton Ave",41.92675599,-87.63442878
+"101",243,"Lincoln Ave & Leavitt St",41.962391,-87.684146
+"102",299,"Halsted St & Roscoe St",41.943662,-87.648917
+"103",126,"Clark St & North Ave",41.911974,-87.631942
+"104",231,"Sheridan Rd & Montrose Ave",41.96167,-87.65464
+"105",127,"Lincoln Ave & Fullerton Ave",41.925905,-87.64926
+"106",128,"Damen Ave & Chicago Ave",41.895769,-87.67722
+"107",219,"Damen Ave & Cortland St",41.916027,-87.677411
+"108",215,"Damen Ave & Madison St",41.88137,-87.67493
+"109",129,"Blue Island Ave & 18th St",41.857556,-87.661535
+"110",130,"Damen Ave & Division St",41.90331,-87.67695
+"111",300,"Broadway & Barry Ave",41.937601,-87.644005
+"112",75,"Canal St & Jackson Blvd",41.877988,-87.640769
+"113",19,"Loomis St & Taylor St",41.869417,-87.660996
+"114",131,"Lincoln Ave & Belmont Ave",41.939365,-87.668385
+"115",214,"Damen Ave & Grand Ave",41.89122,-87.67686
+"116",183,"Damen Ave & Augusta Blvd",41.899714,-87.677234
+"117",228,"Damen Ave & Melrose Ave",41.9406,-87.6785
+"118",308,"Seeley Ave & Roscoe St",41.943403,-87.679618
+"119",258,"Logan Blvd & Elston Ave",41.930584,-87.685126
+"120",94,"Clark St & Armitage Ave",41.918306,-87.636282
+"121",313,"Lakeview Ave & Fullerton Pkwy",41.925858,-87.638973
+"122",72,"State St & 16th St",41.86012138,-87.62772919
+"123",132,"Wentworth Ave & 24th St",41.849237,-87.631715
+"124",273,"Michigan Ave & 18th St",41.857937,-87.623633
+"125",20,"Sheffield Ave & Kingsbury St",41.90959193,-87.65349723
+"126",88,"May St & Randolph St",41.88397,-87.655688
+"127",80,"Aberdeen St & Madison St",41.881487,-87.654752
+"128",21,"Aberdeen St & Jackson Blvd",41.87772613,-87.65478743
+"129",134,"Peoria St & Jackson Blvd",41.877749,-87.649633
+"130",198,"Halsted St & Madison St",41.88175,-87.6478
+"131",22,"May St & Taylor St",41.8694821,-87.6554864
+"132",282,"Halsted St & Maxwell St",41.86458,-87.64693
+"133",135,"Halsted St & 21st St",41.85378,-87.64665
+"134",14,"Morgan St & 18th St",41.858086,-87.651073
+"135",15,"Racine Ave & 18th St",41.85818061,-87.65648665
+"136",136,"Racine Ave & 13th St",41.865054,-87.656959
+"137",55,"Halsted St & James M Rochford St",41.865861,-87.646611
+"138",241,"Morgan St & Polk St",41.871737,-87.65103
+"139",137,"Morgan Ave & 14th Pl",41.862378,-87.651062
+"140",42,"Wabash Ave & Cermak Rd",41.85323876,-87.62533709
+"141",138,"Clybourn Ave & Division St",41.904509,-87.6405
+"142",23,"Orleans St & Elm St",41.902924,-87.637715
+"143",140,"Dearborn Pkwy & Delaware Pl",41.899007,-87.629928
+"144",27,"Larrabee St & North Ave",41.91021,-87.6435
+"145",331,"Halsted St & Blackhawk St",41.90854,-87.648568
+"146",141,"Clark St & Lincoln Ave",41.915689,-87.6346
+"147",218,"Wells St & 19th St",41.856802,-87.633879
+"148",224,"Halsted St & Willow St",41.913778,-87.64884
+"149",289,"Wells St & Concord Ln",41.912202,-87.634664
+"150",288,"Larrabee St & Armitage Ave",41.91797,-87.64368
+"151",223,"Clifton Ave & Armitage Ave",41.918216,-87.656936
+"152",307,"Southport Ave & Clybourn Ave",41.921004,-87.663257
+"153",327,"Sheffield Ave & Webster Ave",41.921687,-87.653714
+"154",87,"Racine Ave & Fullerton Ave",41.92556258,-87.65840426
+"155",93,"Sheffield Ave & Willow St",41.913688,-87.652855
+"156",143,"Sedgwick St & Webster Ave",41.92197,-87.63854
+"157",225,"Halsted St & Dickens Ave",41.919936,-87.64883
+"158",144,"Larrabee St & Webster Ave",41.92175,-87.64401
+"159",186,"Ogden Ave & Race Ave",41.891795,-87.658751
+"160",92,"Carpenter St & Huron St",41.894556,-87.653449
+"161",217,"May St & Fulton St",41.886773,-87.656001
+"162",301,"Clark St & Schiller St",41.907993,-87.631501
+"163",146,"Loomis St & Jackson Blvd",41.877945,-87.662007
+"164",332,"Halsted St & Diversey Pkwy",41.933341,-87.648747
+"165",340,"Clark St & Wrightwood Ave",41.929546,-87.643118
+"166",349,"Halsted St & Wrightwood Ave",41.929143,-87.649077
+"167",302,"Sheffield Ave & Wrightwood Ave",41.928712,-87.653833
+"168",147,"Indiana Ave & 26th St",41.8457,-87.62248
+"169",193,"State St & 29th St",41.841707,-87.626938
+"170",237,"Martin Luther King Dr & 29th St",41.842052,-87.617
+"171",263,"Rhodes Ave & 32nd St",41.836208,-87.613533
+"172",148,"State St & 33rd St",41.834734,-87.625813
+"173",149,"Calumet Ave & 33rd St",41.8349,-87.61793
+"174",272,"Indiana Ave & 31st St",41.838842,-87.621857
+"175",150,"Fort Dearborn Dr & 31st St",41.838556,-87.608218
+"176",61,"Wood St & Milwaukee Ave",41.907655,-87.672552
+"177",16,"Wood St & North Ave",41.910329,-87.672516
+"178",333,"Ashland Ave & Blackhawk St",41.907066,-87.667252
+"179",152,"Lincoln Ave & Diversey Pkwy",41.932225,-87.658617
+"180",153,"Southport Ave & Wellington Ave",41.935733,-87.663576
+"181",154,"Southport Ave & Belmont Ave",41.93949,-87.66378
+"182",226,"Racine Ave & Belmont Ave",41.939743,-87.658865
+"183",156,"Clark St & Wellington Ave",41.93649682,-87.64753866
+"184",334,"Lake Shore Dr & Belmont Ave",41.940775,-87.639192
+"185",157,"Lake Shore Dr & Wellington Ave",41.936669,-87.636794
+"186",227,"Southport Ave & Waveland Ave",41.94815,-87.66394
+"187",311,"Lincoln Ave & Eastwood Ave",41.96583,-87.68651
+"188",326,"Clark St & Leland Ave",41.967096,-87.667429
+"189",305,"Western Ave & Division St",41.902893,-87.687275
+"190",222,"Milwaukee Ave & Rockwell St",41.920195,-87.693033
+"191",158,"Milwaukee Ave & Wabansia Ave",41.912616,-87.681391
+"192",213,"Leavitt St & North Ave",41.910153,-87.68229
+"193",159,"Claremont Ave & Hirsch St",41.907781,-87.685854
+"194",17,"Wood St & Division St",41.90332,-87.67273
+"195",350,"Ashland Ave & Chicago Ave",41.895966,-87.667747
+"196",30,"Ashland Ave & Augusta Blvd",41.899643,-87.6677
+"197",246,"Ashland Ave & Belle Plaine Ave",41.956061,-87.668869
+"198",297,"Paulina St & Montrose Ave",41.961507,-87.671387
+"199",314,"Ravenswood Ave & Berteau Ave",41.957921,-87.673567
+"200",298,"Lincoln Ave & Belle Plaine Ave",41.955927,-87.679259
+"201",257,"Lincoln Ave & Waveland Ave",41.94911,-87.675112
+"202",315,"Leavitt St & Hirsch St",41.906717,-87.682779
+"203",216,"California Ave & Division St",41.903029,-87.697474
+"204",160,"Campbell Ave & North Ave",41.910535,-87.689556
+"205",276,"California Ave & North Ave",41.91044,-87.6972
+"206",259,"California Ave & Francis Pl",41.91855,-87.69723
+"207",24,"Fairbanks Ct & Grand Ave",41.89186,-87.62062
+"208",195,"Columbus Dr & Randolph St",41.884728,-87.619521
+"209",212,"Wells St & Hubbard St",41.889933,-87.634262
+"210",74,"Kingsbury St & Erie St",41.89384315,-87.64185116
+"211",185,"Stave St & Armitage Ave",41.917741,-87.691392
+"212",162,"Damen Ave & Wellington Ave",41.93588,-87.67842
+"213",250,"Ashland Ave & Wellington Ave",41.936083,-87.669807
+"214",163,"Paulina St & Diversey Pkwy",41.93186,-87.67079
+"215",164,"Franklin St & Lake St",41.885837,-87.6355
+"216",232,"Pine Grove Ave & Waveland Ave",41.949275,-87.646303
+"217",165,"Clark St & Waveland Ave",41.94893,-87.65775
+"218",324,"Stockton Dr & Wrightwood Ave",41.93132,-87.638742
+"219",296,"Broadway & Belmont Ave",41.940106,-87.645451
+"220",303,"Broadway & Cornelia Ave",41.945512,-87.64598
+"221",28,"Larrabee St & Menomonee St",41.91468,-87.64332
+"222",342,"Wolcott Ave & Polk St",41.871262,-87.673688
+"223",317,"Wood St & Taylor St",41.869154,-87.671045
+"224",309,"Leavitt St & Armitage Ave",41.917805,-87.682437
+"225",310,"Damen Ave & Charleston St",41.920082,-87.677855
+"226",86,"Eckhart Park",41.89637337,-87.66098386
+"227",29,"Noble St & Milwaukee Ave",41.90068,-87.6626
+"228",290,"Kedzie Ave & Palmer Ct",41.921525,-87.707322
+"229",319,"Greenview Ave & Diversey Pkwy",41.932595,-87.665939
+"230",188,"Greenview Ave & Fullerton Ave",41.92533,-87.6658
+"231",166,"Ashland Ave & Wrightwood Ave",41.92883,-87.668507
+"232",343,"Racine Ave & Wrightwood Ave",41.928887,-87.658971
+"233",190,"Southport Ave & Wrightwood Ave",41.92888,-87.66317
+"234",76,"Lake Shore Dr & Monroe St",41.880958,-87.616743
+"235",77,"Clinton St & Madison St",41.8815824,-87.64127743
+"236",291,"Wells St & Evergreen Ave",41.906724,-87.63483
+"237",337,"Clark St & Chicago Ave",41.896544,-87.630931
+"238",274,"Racine Ave & 15th St",41.861267,-87.656625
+"239",167,"Damen Ave & Coulter St",41.8492,-87.67564
+"240",208,"Ashland Ave & 21st St",41.85381,-87.665897
+"241",209,"Normal Ave & Archer Ave",41.849527,-87.640591
+"242",255,"Indiana Ave & Roosevelt Rd",41.867888,-87.623041
+"243",168,"Michigan Ave & 14th St",41.864059,-87.623727
+"244",316,"Damen Ave & Sunnyside Ave",41.96325,-87.679258
+"245",234,"Clark St & Montrose Ave",41.961588,-87.666036
+"246",292,"Southport Ave & Clark St",41.957081,-87.664199
+"247",347,"Ashland Ave & Grace St",41.950687,-87.6687
+"248",318,"Southport Ave & Irving Park Rd",41.954177,-87.664358
+"249",256,"Broadway & Sheridan Rd",41.952833,-87.649993
+"250",254,"Pine Grove Ave & Irving Park Rd",41.954383,-87.648043
+"251",304,"Halsted St & Waveland Ave",41.949375,-87.649626
+"252",169,"Canal St & Harrison St",41.874337,-87.639566
+"253",57,"Clinton St & Roosevelt Rd",41.86711778,-87.64108796
+"254",268,"Lake Shore Dr & North Blvd",41.911722,-87.626804
+"255",170,"Clinton St & 18th St",41.85795,-87.640826
+"256",171,"May St & Cullerton St",41.855136,-87.654127
+"257",320,"Loomis St & Lexington St",41.872187,-87.661501
+"258",99,"Lake Shore Dr & Ohio St",41.89257,-87.614492
+"259",173,"Mies van der Rohe Way & Chicago Ave",41.89691,-87.621743
+"260",194,"State St & Wacker Dr",41.887155,-87.62775
+"261",284,"Michigan Ave & Jackson Blvd",41.87785,-87.62408
+"262",174,"Canal St & Madison St",41.882091,-87.639833
+"263",175,"Wells St & Polk St",41.872373,-87.633523
+"264",335,"Calumet Ave & 35th St",41.831379,-87.618034
+"265",265,"Cottage Grove Ave & Oakwood Blvd",41.822985,-87.6071
+"266",329,"Lake Shore Dr & Diversey Pkwy",41.932684,-87.63625
+"267",176,"Clark St & Elm St",41.903233,-87.631253
+"268",177,"Theater on the Lake",41.926277,-87.630834
+"269",346,"Ada St & Washington Blvd",41.88283,-87.661206
+"270",275,"Ashland Ave & 13th St",41.865234,-87.666507
+"271",247,"Shore Drive & 55th St",41.795212,-87.580715
+"272",248,"Woodlawn Ave & 55th St",41.795264,-87.596471
+"273",328,"Ellis Ave & 58th St",41.788746,-87.601334
+"274",306,"Sheridan Rd & Buena Ave",41.9584,-87.65423
+"275",312,"Clarendon Ave & Gordon Ter",41.957879,-87.649519
+"276",323,"Sheridan Rd & Lawrence Ave",41.969517,-87.654691
+"277",251,"Clarendon Ave & Leland Ave",41.967968,-87.650001
+"278",249,"Montrose Harbor",41.963982,-87.638181
+"279",245,"Clarendon Ave & Junior Ter",41.961004,-87.649603
+"280",325,"Clark St & Winnemac Ave",41.973385,-87.668365
+"281",281,"Western Ave & 24th St",41.84847,-87.685109
+"282",252,"Greenwood Ave & 47th St",41.809835,-87.599383
+"283",322,"Kimbark Ave & 53rd St",41.799568,-87.594747
+"284",121,"Blackstone Ave & Hyde Park Blvd",41.802562,-87.590368
+"285",207,"Emerald Ave & 28th St",41.84358,-87.645368
+"286",339,"Emerald Ave & 31st St",41.838198,-87.645143
+"287",178,"State St & 19th St",41.856594,-87.627542
+"288",233,"Sangamon St & Washington Blvd",41.883004,-87.651148
+"289",236,"Sedgwick St & Schiller St",41.907576,-87.638517
+"290",279,"Halsted St & 35th St",41.830661,-87.647172
+"291",262,"Halsted St & 37th St",41.827071,-87.645801
+"292",278,"Wallace Ave & 35th St",41.830629,-87.64129
+"293",179,"Martin Luther King Dr & Oakwood Blvd",41.82256,-87.61615
+"294",336,"Cottage Grove Ave & 47th St",41.809855,-87.606755
+"295",196,"Cityfront Plaza & N Water St",41.889875,-87.621994
+"296",181,"LaSalle St & Illinois St",41.890749,-87.63206
+"297",341,"Adler Planetarium",41.866095,-87.607267
+"298",285,"Wood St & Grand Ave",41.89113,-87.67203
+"299",277,"Ashland Ave & Grand Ave",41.891072,-87.666611
+"300",351,"Cottage Grove Ave & 51st St",41.803038,-87.606615
+"301",5,"State St & Harrison St",41.87395806,-87.62773949
+"302",13,"Wilton Ave & Diversey Pkwy",41.93250008,-87.65268082
+"303",14,"Morgan St & 18th St",41.858086,-87.651073
+"304",15,"Racine Ave & 19th St",41.856453,-87.656471
+"305",16,"Wood St & North Ave",41.910329,-87.672516
+"306",17,"Wood St & Division St",41.90332,-87.67273
+"307",19,"Loomis St & Taylor St",41.869417,-87.660996
+"308",20,"Sheffield Ave & Kingsbury St",41.90959193,-87.65349723
+"309",21,"Aberdeen St & Jackson Blvd",41.87772613,-87.65478743
+"310",22,"May St & Taylor St",41.8694821,-87.6554864
+"311",23,"Orleans St & Elm St",41.902924,-87.637715
+"312",24,"Fairbanks Ct & Grand Ave",41.89186,-87.62062
+"313",25,"Michigan Ave & Pearson St",41.89766,-87.62351
+"314",26,"McClurg Ct & Illinois St",41.89102,-87.6173
+"315",27,"Larrabee St & North Ave",41.91021,-87.6435
+"316",28,"Larrabee St & Menomonee St",41.91468,-87.64332
+"317",29,"Noble St & Milwaukee Ave",41.90068,-87.6626
+"318",30,"Ashland Ave & Augusta Blvd",41.899643,-87.6677
+"319",31,"Franklin St & Chicago Ave",41.89680204,-87.63563839
+"320",32,"Racine Ave & Congress Pkwy",41.87464,-87.65703
+"321",33,"State St & Van Buren St",41.877181,-87.627844
+"322",34,"Cannon Dr & Fullerton Ave",41.92675599,-87.63442878
+"323",35,"Streeter Dr & Illinois St",41.891071,-87.6122
+"324",36,"Franklin St & Jackson Blvd",41.87770796,-87.63532114
+"325",37,"Dearborn St & Adams St",41.87935636,-87.62979104
+"326",42,"Wabash Ave & Cermak Rd",41.85323876,-87.62533709
+"327",43,"Michigan Ave & Washington St",41.88389277,-87.62464914
+"328",44,"State St & Randolph St",41.8847302,-87.62773357
+"329",45,"Michigan Ave & Congress Pkwy",41.8760656,-87.62443336
+"330",46,"Wells St & Walton St",41.89993001,-87.63443007
+"331",47,"State St & Kinzie St",41.88918,-87.6277
+"332",48,"Larrabee St & Kingsbury St",41.897764,-87.642884
+"333",49,"Dearborn St & Monroe St",41.88131982,-87.62952092
+"334",50,"Clark St & Congress Pkwy",41.87593267,-87.63058454
+"335",51,"Clark St & Randolph St",41.88457623,-87.63188991
+"336",52,"Michigan Ave & Lake St",41.886024,-87.624117
+"337",53,"Wells St & Erie St",41.893832,-87.634195
+"338",54,"Ogden Ave & Chicago Ave",41.89636246,-87.65406127
+"339",55,"Halsted St & James M Rochford St",41.865861,-87.646611
+"340",56,"Desplaines St & Kinzie St",41.88871604,-87.64444785
+"341",57,"Clinton St & Roosevelt Rd",41.86711778,-87.64108796
+"342",58,"Marshfield Ave & Cortland St",41.916017,-87.668879
+"343",59,"Wabash Ave & Roosevelt Rd",41.867227,-87.625961
+"344",60,"Dayton St & North Ave",41.91057803,-87.64942193
+"345",61,"Wood St & Milwaukee Ave",41.907655,-87.672552
+"346",62,"McCormick Place",41.85137517,-87.61883465
+"347",66,"Clinton St & Lake St",41.88583274,-87.64138231
+"348",67,"Sheffield Ave & Fullerton Ave",41.92560188,-87.65370804
+"349",68,"Clinton St & Tilden St",41.875885,-87.640795
+"350",69,"Damen Ave & Pierce Ave",41.90939601,-87.67769193
+"351",71,"Morgan St & Lake St",41.88548331,-87.65230486
+"352",72,"State St & 16th St",41.86012138,-87.62772919
+"353",73,"Jefferson St & Monroe St",41.880422,-87.642746
+"354",74,"Kingsbury St & Erie St",41.89384315,-87.64185116
+"355",75,"Canal St & Jackson Blvd",41.878149,-87.640001
+"356",76,"Lake Shore Dr & Monroe St",41.880958,-87.616743
+"357",77,"Clinton St & Madison St",41.8815824,-87.64127743
+"358",80,"Aberdeen St & Madison St",41.881487,-87.654752
+"359",81,"Daley Center Plaza",41.884451,-87.629892
+"360",84,"Union Ave & Grand Ave",41.891,-87.645925
+"361",85,"Michigan Ave & Oak St",41.90096039,-87.62377664
+"362",86,"Eckhart Park",41.89637337,-87.66098386
+"363",87,"Racine Ave & Fullerton Ave",41.92556258,-87.65840426
+"364",88,"May St & Randolph St",41.88397,-87.655688
+"365",90,"Millennium Park",41.8810317,-87.62408432
+"366",91,"Clinton St & Washington Blvd",41.88338,-87.64117
+"367",92,"Carpenter St & Huron St",41.894556,-87.653449
+"368",93,"Sheffield Ave & Willow St",41.913688,-87.652855
+"369",94,"Clark St & Armitage Ave",41.918306,-87.636282
+"370",97,"Museum Campus",41.865212,-87.617759
+"371",98,"LaSalle St & Washington St",41.882664,-87.63253
+"372",99,"Lake Shore Dr & Ohio St",41.89257,-87.614492
+"373",100,"Orleans St & Merchandise Mart Plaza",41.888243,-87.63639
+"374",106,"State St & Pearson St",41.897448,-87.628722
+"375",108,"Halsted St & Polk St",41.87184,-87.64664
+"376",109,"900 W Harrison",41.874675,-87.650019
+"377",110,"State St & Erie St",41.893975,-87.628623
+"378",111,"Sedgwick St & Huron St",41.894666,-87.638437
+"379",112,"Green St & Randolph St",41.884078,-87.648684
+"380",113,"Bissell St & Armitage Ave",41.91844,-87.65222
+"381",114,"Sheffield Ave & Addison St",41.94688,-87.65445
+"382",115,"Sheffield Ave & Wellington Ave",41.936253,-87.653566
+"383",116,"Western Ave & Winnebago Ave",41.915533,-87.687051
+"384",117,"Wilton Ave & Belmont Ave",41.94018,-87.65304
+"385",118,"Sedgwick St & North Ave",41.910579,-87.638618
+"386",119,"Ashland Ave & Lake St",41.88541,-87.66732
+"387",120,"Wentworth Ave & Archer Ave",41.854564,-87.631937
+"388",121,"Blackstone Ave & Hyde Park Blvd",41.802562,-87.590368
+"389",122,"Ogden Ave & Congress Pkwy",41.87501,-87.67328
+"390",123,"California Ave & Milwaukee Ave",41.922695,-87.697153
+"391",124,"Damen Ave & Cullerton St",41.855048,-87.675726
+"392",126,"Clark St & North Ave",41.911974,-87.631942
+"393",127,"Lincoln Ave & Fullerton Ave",41.925905,-87.64926
+"394",128,"Damen Ave & Chicago Ave",41.895769,-87.67722
+"395",129,"Blue Island Ave & 18th St",41.857556,-87.661535
+"396",130,"Damen Ave & Division St",41.90331,-87.67695
+"397",131,"Lincoln Ave & Belmont Ave",41.939365,-87.668385
+"398",132,"Wentworth Ave & 24th St",41.849237,-87.631715
+"399",134,"Peoria St & Jackson Blvd",41.877749,-87.649633
+"400",135,"Halsted St & 21st St",41.85378,-87.64665
+"401",136,"Racine Ave & 13th St",41.865054,-87.656959
+"402",137,"Morgan Ave & 14th Pl",41.862378,-87.651062
+"403",138,"Clybourn Ave & Division St",41.904509,-87.6405
+"404",140,"Dearborn Pkwy & Delaware Pl",41.899007,-87.629928
+"405",141,"Clark St & Lincoln Ave",41.915689,-87.6346
+"406",143,"Sedgwick St & Webster Ave",41.922167,-87.638888
+"407",144,"Larrabee St & Webster Ave",41.92175,-87.64401
+"408",146,"Loomis St & Jackson Blvd",41.877945,-87.662007
+"409",147,"Indiana Ave & 26th St",41.8457,-87.62248
+"410",148,"State St & 33rd St",41.834734,-87.625813
+"411",149,"Calumet Ave & 33rd St",41.8349,-87.61793
+"412",150,"Fort Dearborn Dr & 31st St",41.838556,-87.608218
+"413",152,"Lincoln Ave & Diversey Pkwy",41.932225,-87.658617
+"414",153,"Southport Ave & Wellington Ave",41.935733,-87.663576
+"415",154,"Southport Ave & Belmont Ave",41.93949,-87.66378
+"416",156,"Clark St & Wellington Ave",41.93649682,-87.64753866
+"417",157,"Lake Shore Dr & Wellington Ave",41.936669,-87.636794
+"418",158,"Milwaukee Ave & Wabansia Ave",41.912616,-87.681391
+"419",159,"Claremont Ave & Hirsch St",41.907781,-87.685854
+"420",160,"Campbell Ave & North Ave",41.910535,-87.689556
+"421",162,"Damen Ave & Wellington Ave",41.93588,-87.67842
+"422",163,"Damen Ave & Clybourn Ave",41.931931,-87.677856
+"423",164,"Franklin St & Lake St",41.885837,-87.6355
+"424",165,"Clark St & Grace St",41.95078,-87.659172
+"425",166,"Ashland Ave & Wrightwood Ave",41.92883,-87.668507
+"426",167,"Damen Ave & Coulter St",41.8492,-87.67564
+"427",168,"Michigan Ave & 14th St",41.864059,-87.623727
+"428",169,"Canal St & Harrison St",41.874337,-87.639566
+"429",170,"Clinton St & 18th St",41.85795,-87.640826
+"430",171,"May St & Cullerton St",41.855136,-87.654127
+"431",173,"Mies van der Rohe Way & Chicago Ave",41.89691,-87.621743
+"432",174,"Canal St & Madison St",41.882091,-87.639833
+"433",175,"Wells St & Polk St",41.872373,-87.633523
+"434",176,"Clark St & Elm St",41.903233,-87.631253
+"435",177,"Theater on the Lake",41.926277,-87.630834
+"436",178,"State St & 19th St",41.856594,-87.627542
+"437",179,"MLK Jr Dr & Oakwood Blvd",41.82256,-87.61615
+"438",181,"LaSalle St & Illinois St",41.890749,-87.63206
+"439",183,"Damen Ave & Augusta Blvd",41.899714,-87.677234
+"440",184,"State St & 35th St",41.83104,-87.62688
+"441",185,"Stave St & Armitage Ave",41.917741,-87.691392
+"442",186,"Ogden Ave & Race Ave",41.891795,-87.658751
+"443",188,"Greenview Ave & Fullerton Ave",41.92533,-87.6658
+"444",190,"Southport Ave & Wrightwood Ave",41.92888,-87.66317
+"445",191,"Canal St & Monroe St",41.8807,-87.63947
+"446",192,"Canal St & Adams St",41.879255,-87.639904
+"447",193,"State St & 29th St",41.841707,-87.626938
+"448",194,"Wabash Ave & Wacker Pl",41.886875,-87.62603
+"449",195,"Columbus Dr & Randolph St",41.884728,-87.619521
+"450",196,"Cityfront Plaza Dr & Pioneer Ct",41.890252,-87.622105
+"451",197,"Michigan Ave & Madison St",41.882134,-87.625125
+"452",198,"Halsted St & Madison St",41.88175,-87.6478
+"453",199,"Wabash Ave & Grand Ave",41.891738,-87.626937
+"454",200,"MLK Jr Dr & 47th St",41.809851,-87.616279
+"455",201,"Indiana Ave & 40th St",41.82168,-87.6216
+"456",202,"Halsted St & 18th St",41.857499,-87.646277
+"457",203,"Western Ave & 21st St",41.85394,-87.685243
+"458",204,"Prairie Ave & Garfield Blvd",41.794853,-87.618691
+"459",205,"Paulina St & 18th St",41.857901,-87.668745
+"460",206,"Halsted St & Archer Ave",41.847203,-87.646795
+"461",207,"Emerald Ave & 28th St",41.84358,-87.645368
+"462",208,"Ashland Ave & 21st St",41.85381,-87.665897
+"463",209,"Normal Ave & Archer Ave",41.849527,-87.640591
+"464",210,"Ashland Ave & Division St",41.90345,-87.667747
+"465",211,"St Clair St & Erie St",41.894448,-87.622663
+"466",212,"Wells St & Hubbard St",41.889933,-87.634262
+"467",213,"Leavitt St & North Ave",41.910153,-87.68229
+"468",214,"Damen Ave & Grand Ave",41.89122,-87.67686
+"469",215,"Damen Ave & Madison St",41.88137,-87.67493
+"470",216,"California Ave & Division St",41.903029,-87.697474
+"471",217,"May St & Fulton St",41.886773,-87.656001
+"472",218,"Wells St & 19th St",41.856802,-87.633879
+"473",219,"Damen Ave & Cortland St",41.916027,-87.677411
+"474",220,"Hampden Ct & Diversey Pkwy",41.93262,-87.642385
+"475",222,"Milwaukee Ave & Rockwell St",41.920195,-87.693033
+"476",223,"Clifton Ave & Armitage Ave",41.918216,-87.656936
+"477",224,"Halsted St & Willow St",41.913778,-87.64884
+"478",225,"Halsted St & Dickens Ave",41.919936,-87.64883
+"479",226,"Racine Ave & Belmont Ave",41.939743,-87.658865
+"480",227,"Southport Ave & Waveland Ave",41.94815,-87.66394
+"481",228,"Damen Ave & Melrose Ave",41.9406,-87.6785
+"482",229,"Southport Ave & Roscoe St",41.943739,-87.66402
+"483",230,"Lincoln Ave & Roscoe St",41.94334,-87.67097
+"484",231,"Sheridan Rd & Montrose Ave",41.96167,-87.65464
+"485",232,"Pine Grove Ave & Waveland Ave",41.949275,-87.646303
+"486",233,"Sangamon St & Washington Blvd",41.883004,-87.651148
+"487",234,"Clark St & Montrose Ave",41.961588,-87.666036
+"488",236,"Sedgwick St & Schiller St",41.907576,-87.638517
+"489",237,"MLK Jr Dr & 29th St",41.842052,-87.617
+"490",238,"Ravenswood Ave & Montrose Ave",41.961615,-87.674365
+"491",239,"Western Ave & Leland Ave",41.966555,-87.688487
+"492",240,"Sheridan Rd & Irving Park Rd",41.954245,-87.654406
+"493",241,"Morgan St & Polk St",41.871737,-87.65103
+"494",242,"Damen Ave & Leland Ave",41.967094,-87.679028
+"495",243,"Lincoln Ave & Leavitt St",41.962391,-87.684146
+"496",244,"Ravenswood Ave & Irving Park Rd",41.95469,-87.67393
+"497",245,"Clarendon Ave & Junior Ter",41.961004,-87.649603
+"498",246,"Ashland Ave & Belle Plaine Ave",41.956061,-87.668869
+"499",247,"Shore Drive & 55th St",41.795212,-87.580715
+"500",248,"Woodlawn Ave & 55th St",41.795264,-87.596471
+"501",249,"Montrose Harbor",41.963982,-87.638181
+"502",250,"Ashland Ave & Wellington Ave",41.936083,-87.669807
+"503",251,"Clarendon Ave & Leland Ave",41.967968,-87.650001
+"504",252,"Greenwood Ave & 47th St",41.809835,-87.599383
+"505",253,"Clifton Ave & Lawrence Ave",41.968873,-87.658857
+"506",254,"Pine Grove Ave & Irving Park Rd",41.954383,-87.648043
+"507",255,"Indiana Ave & Roosevelt Rd",41.867888,-87.623041
+"508",256,"Broadway & Sheridan Rd",41.952833,-87.649993
+"509",257,"Lincoln Ave & Waveland Ave",41.94911,-87.675112
+"510",258,"Logan Blvd & Elston Ave",41.930584,-87.685126
+"511",259,"California Ave & Francis Pl",41.91855,-87.69723
+"512",260,"Kedzie Ave & Milwaukee Ave",41.929567,-87.707857
+"513",261,"Hermitage Ave & Polk St",41.871514,-87.669886
+"514",262,"Halsted St & 37th St",41.827071,-87.645801
+"515",263,"Rhodes Ave & 32nd St",41.836208,-87.613533
+"516",264,"Stetson Ave & South Water St",41.886835,-87.62232
+"517",265,"Cottage Grove Ave & Oakwood Blvd",41.822985,-87.6071
+"518",267,"Lake Park Ave & 47th St",41.809443,-87.591875
+"519",268,"Lake Shore Dr & North Blvd",41.911722,-87.626804
+"520",271,"Cottage Grove Ave & 43rd St",41.816499,-87.606582
+"521",272,"Indiana Ave & 31st St",41.838842,-87.621857
+"522",273,"Michigan Ave & 18th St",41.857937,-87.623633
+"523",274,"Racine Ave & 15th St",41.861267,-87.656625
+"524",275,"Ashland Ave & 13th St",41.865234,-87.666507
+"525",276,"California Ave & North Ave",41.91044,-87.6972
+"526",277,"Ashland Ave & Grand Ave",41.891072,-87.666611
+"527",278,"Wallace Ave & 35th St",41.830629,-87.64129
+"528",279,"Halsted St & 35th St",41.830661,-87.647172
+"529",280,"Morgan St & 31st St",41.8378,-87.65114
+"530",281,"Western Ave & 24th St",41.84847,-87.685109
+"531",282,"Halsted St & Maxwell St",41.86458,-87.64693
+"532",283,"LaSalle St & Jackson Blvd",41.87817,-87.631985
+"533",284,"Michigan Ave & Jackson Blvd",41.87785,-87.62408
+"534",285,"Wood St & Grand Ave",41.89113,-87.67203
+"535",286,"Franklin St & Quincy St",41.878724,-87.634793
+"536",287,"Franklin St & Arcade Pl",41.881469,-87.635177
+"537",288,"Larrabee St & Armitage Ave",41.91797,-87.64368
+"538",289,"Wells St & Concord Ln",41.912202,-87.634664
+"539",290,"Kedzie Ave & Palmer Ct",41.921525,-87.707322
+"540",291,"Wells St & Evergreen Ave",41.906724,-87.63483
+"541",292,"Southport Ave & Clark St",41.957081,-87.664199
+"542",293,"Broadway & Wilson Ave",41.965485,-87.657238
+"543",294,"Broadway & Berwyn Ave",41.978353,-87.659753
+"544",295,"Broadway & Argyle St",41.972972,-87.659637
+"545",296,"Broadway & Belmont Ave",41.940106,-87.645451
+"546",297,"Paulina St & Montrose Ave",41.961507,-87.671387
+"547",298,"Lincoln Ave & Belle Plaine Ave",41.955927,-87.679259
+"548",299,"Halsted St & Roscoe St",41.94367,-87.64895
+"549",300,"Broadway & Barry Ave",41.937725,-87.644095
+"550",301,"Clark St & Schiller St",41.907993,-87.631501
+"551",302,"Sheffield Ave & Wrightwood Ave",41.928712,-87.653833
+"552",303,"Broadway & Cornelia Ave",41.945512,-87.64598
+"553",304,"Halsted St & Waveland Ave",41.949375,-87.649626
+"554",305,"Western Ave & Division St",41.902893,-87.687275
+"555",306,"Sheridan Rd & Buena Ave",41.9584,-87.65423
+"556",307,"Southport Ave & Clybourn Ave",41.920445,-87.663095
+"557",308,"Seeley Ave & Roscoe St",41.943403,-87.679618
+"558",309,"Leavitt St & Armitage Ave",41.917805,-87.682437
+"559",310,"Damen Ave & Charleston St",41.920082,-87.677855
+"560",311,"Leavitt St & Lawrence Ave",41.968885,-87.684001
+"561",312,"Clarendon Ave & Gordon Ter",41.957879,-87.649519
+"562",313,"Lakeview Ave & Fullerton Pkwy",41.925858,-87.638973
+"563",314,"Ravenswood Ave & Berteau Ave",41.957921,-87.673567
+"564",315,"Leavitt St & Hirsch St",41.906717,-87.682779
+"565",316,"Damen Ave & Sunnyside Ave",41.96325,-87.679258
+"566",317,"Wood St & Taylor St",41.869154,-87.671045
+"567",318,"Southport Ave & Irving Park Rd",41.954177,-87.664358
+"568",319,"Greenview Ave & Diversey Pkwy",41.932595,-87.665939
+"569",320,"Loomis St & Lexington St",41.872187,-87.661501
+"570",321,"Wabash Ave & 8th St",41.871962,-87.626106
+"571",322,"Kimbark Ave & 53rd St",41.799568,-87.594747
+"572",323,"Sheridan Rd & Lawrence Ave",41.969517,-87.654691
+"573",324,"Stockton Dr & Wrightwood Ave",41.93132,-87.638742
+"574",325,"Clark St & Winnemac Ave",41.973385,-87.668365
+"575",326,"Clark St & Leland Ave",41.967096,-87.667429
+"576",327,"Sheffield Ave & Webster Ave",41.921687,-87.653714
+"577",328,"Ellis Ave & 58th St",41.788746,-87.601334
+"578",329,"Lake Shore Dr & Diversey Pkwy",41.932684,-87.63625
+"579",330,"Lincoln Ave & Addison St",41.946176,-87.673308
+"580",331,"Halsted St & Blackhawk St",41.90854,-87.648568
+"581",332,"Halsted St & Diversey Pkwy",41.933341,-87.648747
+"582",333,"Ashland Ave & Blackhawk St",41.907066,-87.667252
+"583",334,"Lake Shore Dr & Belmont Ave",41.940775,-87.639192
+"584",335,"Calumet Ave & 35th St",41.831379,-87.618034
+"585",336,"Cottage Grove Ave & 47th St",41.809855,-87.606755
+"586",337,"Clark St & Chicago Ave",41.896544,-87.630931
+"587",338,"Calumet Ave & 18th St",41.857611,-87.619407
+"588",339,"Emerald Ave & 31st St",41.838198,-87.645143
+"589",340,"Clark St & Wrightwood Ave",41.929546,-87.643118
+"590",341,"Adler Planetarium",41.866095,-87.607267
+"591",342,"Wolcott Ave & Polk St",41.871262,-87.673688
+"592",343,"Racine Ave & Wrightwood Ave",41.928887,-87.658971
+"593",344,"Ravenswood Ave & Lawrence Ave",41.96909,-87.674237
+"594",345,"Lake Park Ave & 56th St",41.793242,-87.587782
+"595",346,"Ada St & Washington Blvd",41.88283,-87.661206
+"596",347,"Ashland Ave & Grace St",41.950687,-87.6687
+"597",348,"California Ave & 21st St",41.854016,-87.695445
+"598",349,"Halsted St & Wrightwood Ave",41.929143,-87.649077
+"599",350,"Ashland Ave & Chicago Ave",41.895966,-87.667747
+"600",351,"Cottage Grove Ave & 51st St",41.803038,-87.606615
