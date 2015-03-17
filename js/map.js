@@ -4,8 +4,12 @@
 	- Date selector?
 	- Put on chloropleth poverty map?
 */
-var data,map,widthScale, opacityScale, routes, timeFactor;
-var lines = {}
+var data,map,widthScale, opacityScale, routes, timeFactor, stations, stationScale;
+var circles = {}
+// var lines = {}
+var lineGroup = L.layerGroup([]);
+var circleGroup = L.layerGroup([]);
+stationValues = {}
 var drawMap = function () {
 	var height = $('#container').innerHeight() - $('#header').height()
 	d3.select('#' + settings.container).append('div').attr('id', settings.id).style('height', height + 'px')
@@ -22,8 +26,9 @@ var drawMap = function () {
 	    center: settings.center,
 	    zoom: settings.zoom,
 	})
-
-	var controls = {'Show map': mapboxTiles}
+	lineGroup.addTo(map)
+	circleGroup.addTo(map)
+	var controls = {'Map': mapboxTiles, 'Riders':lineGroup, 'Stations':circleGroup}
 	L.control.layers({},controls).addTo(map);
 	if(settings.showMap == true) {
 		map.addLayer(mapboxTiles)	
@@ -33,8 +38,16 @@ var drawMap = function () {
 	d3.select('#label-middle').append('text').text('bikers')
 	d3.select('#label-right').append('text').text('(6/28/2014)')
 	window.setTimeout(function() {d3.select('#label').transition().duration(2000).style('opacity', 0).each('end', function() {drawLinesByMinute()})}, 2000)
+	if(settings.drawStations == true) drawStations()
 }
 
+// Get stations
+var getStations = function(callback) {
+	d3.csv(settings.stationFile, function(error, dat){
+		stations = dat
+		if(typeof callback == 'function') callback()
+	})
+}
 
 var getData = function(callback) {
 	if(settings.dataSource == 'database') {
@@ -60,15 +73,46 @@ var getData = function(callback) {
 			if(typeof callback == 'function') callback()
 		})
 	}
-		
 }
 
-var getRoutes = function(callback) {
-		d3.csv(settings.routeFile, function(error, dat){
-			routes = dat
-			if(typeof callback == 'function') callback()
-		})
+var getStationValues = function() {
+	
+	data.map(function(d) {
+		var station = d.id.split('-')[1]
+		if(stationValues[station] == undefined) stationValues[station] = 1
+		else stationValues[station] += 1
+	})
+	var max = d3.max(d3.keys(stationValues), function(d) {return stationValues[d]})
+	var min = d3.min(d3.keys(stationValues), function(d) {return stationValues[d]})
+	stationScale = d3.scale.sqrt().range([settings.minRadius, settings.maxRadius]).domain([min,max])
 }
+
+var drawStations = function() {
+	getStationValues()
+	stations.map(function(d){
+		var val = stationValues[d.id]
+		if(val == undefined) return
+		var size = settings.sizeStations == true ? stationScale(val):settings.defaultRadius
+		var size = 1
+		var text = '<b>' + d.name + ':</b> ' + val + ' riders'
+		circles[d.id] = L.circle([d.latitude, d.longitude], size, {
+		    color: 'black',
+		    stroke:false,
+		    weight:1,
+		    fillColor: 'gray',
+		    fillOpacity: .3, 
+		    opacity:.3
+		}).bindPopup(text).addTo(circleGroup);	
+	})
+	
+}
+
+// var getRoutes = function(callback) {
+// 	d3.csv(settings.routeFile, function(error, dat){
+// 		routes = dat
+// 		if(typeof callback == 'function') callback()
+// 	})
+// }
 
 var drawLinesByMinute= function() {
 	var totalMinutes = settings.totalMinutes
@@ -94,7 +138,7 @@ var animateLine = function(dat, index) {
 	test = dat;
 	var opacity = settings.encodeOpacity == true ? opacityScale(Number(dat.freq)) : settings.defaultOpacity
 	var weight = settings.encodeWidth == true ? widthScale(Number(dat.freq)) : settings.defaultWidth
-	var polyline = L.polyline([], {weight:weight, opacity:settings.defaultOpacity, color:settings.color}).addTo(map);
+	var polyline = L.polyline([], {weight:weight, opacity:settings.defaultOpacity, color:settings.color}).addTo(lineGroup);
 	var txt = dat.route
 	if(txt.slice(-1)==",")txt = txt.substring(0, txt.length - 1);
 	if(txt.slice(-1)!="]")txt = txt + ']'
@@ -115,7 +159,15 @@ var animateLine = function(dat, index) {
 		else {
 			polyline.setStyle({opacity:settings.finalOpacity})
 			if(settings.disappear == true) {
-				window.setTimeout(function() {map.removeLayer(polyline)}, settings.disappearTime)
+				// window.setTimeout(function() {map.removeLayer(polyline)}, settings.disappearTime)
+				map.removeLayer(polyline)
+			}
+			if(settings.growCircles == true) {
+				var id = dat.id.split('-')[1]
+				var rad = circles[id].getRadius()
+				var increment = rad > 200 ? 20 : 100
+				// console.log('station ', id, ' rad ', rad)
+				circles[id].setRadius(rad + increment)
 			}
 		}
 	}

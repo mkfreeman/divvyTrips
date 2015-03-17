@@ -58,11 +58,12 @@
         </div>
         <div id="slider" class="arrow_box"></div>
          <script type="text/javascript">
-            var clock = new Clock()
-            getData(drawMap)
+            getStations(function() {
+                getData(drawMap)
+            })
+            var clock =  new Clock()
             var start = new Date('01-01-2014')
             var end = new Date('12-31-2014')
-
             var dateScale = d3.time.scale().domain([1,365]).range([start,end])
             $('#slider').slider({
                 min:1, 

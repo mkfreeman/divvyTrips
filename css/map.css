@@ -137,3 +137,19 @@ body{
   width: 60px;
   margin-left: -2.6em;
 }
+
+.leaflet-popup-content-wrapper {
+	background-color:rgb(78,78,78) !important;
+}
+
+.leaflet-popup-content-wrapper > div {
+	color:white;
+}
+.leaflet-popup-tip {
+	background-color:rgb(78,78,78) !important;	
+}
+
+
+.leaflet-popup-tip-container {
+	width:0px;
+}
