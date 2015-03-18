@@ -7,7 +7,7 @@
         <title>Divvy Routes</title>
        
         <!-- Add D3 JavaSript files -->
-        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="lib/d3/d3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
         <!-- Jquery UI -->
@@ -51,11 +51,14 @@
                </svg>
              </a>
         </div>
+        <div id='loader'>
+            <img src='lib/loader.gif'></img> 
+        </div>
         <div id="label">
             <div id="label-left"></div>
-            <div id="label-middle" style="color:#2FCAFC"></div>
-            <div id="label-right"></div>
+            <div id="label-middle" style="color:#2FCAFC"></div>            
         </div>
+        <div id="label-date"></div>
 		<div id="container">
             <div id="controls">
                 <button  id='riders' class="active" style="background: url(images/routes.png)"></button>

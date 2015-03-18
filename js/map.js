@@ -1,21 +1,24 @@
-// To do
-/*
-	- Add stations?
-	- Date selector?
-	- Put on chloropleth poverty map?
-*/
+// Map drawing file -- should be refactored as an inhereted object
 var data,map,widthScale, opacityScale, routes, timeFactor, stations, stationScale, mapboxTiles;
 var circles = {}
-// var lines = {}
 var lineGroup = L.layerGroup([]);
 var circleGroup = L.layerGroup([]);
 stationValues = {}
-var drawMap = function () {
+
+// Resize height
+$(window).resize(function() {setHeight()})
+
+// Height setting function
+var setHeight = function() {
 	var height = $('#container').innerHeight() - $('#header').height()
-	d3.select('#' + settings.container).append('div').attr('id', settings.id).style('height', height + 'px')
+	d3.select('#' + self.settings.id).style('height', height + 'px')
+}
+var drawMap = function () {
+	d3.select('#' + settings.container).append('div').attr('id', settings.id)
 	d3.select('#map').style('background-color', settings.backgroundColor)
 	d3.select('body').style('background-color', settings.backgroundColor)
 
+	setHeight()
 	L.mapbox.accessToken = settings.accessToken;
 	
 	mapboxTiles = L.tileLayer('https://{s}.tiles.mapbox.com/v4/michaelfreeman.lc5jblfh/{z}/{x}/{y}.png?access_token=' + L.mapbox.accessToken, {
@@ -35,11 +38,11 @@ var drawMap = function () {
 	lineGroup.addTo(map)
 	circleGroup.addTo(map)
 	
-
-	d3.select('#label-left').append('text').text('Chicago')
-	d3.select('#label-middle').append('text').text('bikers')
-	d3.select('#label-right').append('text').text('(6/28/2014)')
-	window.setTimeout(function() {d3.select('#label').transition().duration(2000).style('opacity', 0).each('end', function() {drawLinesByMinute()})}, 2000)
+	// Write label
+	d3.select('#label-left').append('text').text('CHICAGO')
+	d3.select('#label-middle').append('text').text('BIKERS')
+	d3.select('#label-date').append('text').text('(6/23/2014)')
+	window.setTimeout(function() {d3.selectAll('#label, #label-date').transition().duration(2000).style('opacity', 0).each('end', function() {d3.select(this).style('display', 'none'); drawLinesByMinute()})}, 2000)
 	if(settings.drawStations == true) drawStations()
 }
 
@@ -53,12 +56,20 @@ var getStations = function(callback) {
 
 var getData = function(callback) {
 	if(settings.data[settings.date] != undefined) {
-		console.log('got it!')
 		data = settings.data[settings.date]
 		if(typeof(callback) == 'function') callback()
 		return
 	}
-	if(settings.dataSource == 'database') {
+	$('#loader').show()
+// load first one from csv to limit database hits
+	if(d3.keys(settings.data).length == 0 ){
+		d3.csv(settings.dataFile, function(error, dat){
+			$('#loader').hide()
+			data = settings.data[settings.date] = dat
+			if(typeof callback == 'function') callback()
+		})
+	}
+	else {
 		$.ajax({
 			url:'php/getData.php',
 			type: "get",
@@ -66,6 +77,7 @@ var getData = function(callback) {
 				  date:settings.date,
 			}, 
 			success:function(dat) {
+				$('#loader').hide()
 				data = settings.data[settings.date] = dat.data
 				if(typeof(callback) == 'function') callback()
 			}, 
@@ -74,14 +86,11 @@ var getData = function(callback) {
 			},
 			dataType:"json"
 		})
+
 	}
-	else {
-		d3.csv(settings.dataFile, function(error, dat){
-			data = settings.data[settings.date] = dat
-			if(typeof callback == 'function') callback()
-		})
-	}
+	
 }
+
 
 var getStationValues = function() {
 	
@@ -118,9 +127,6 @@ var drawLinesByMinute= function() {
 	timeFactor = settings.timeFactor
 	settings.stopDrawing = false
 	var startDrawing = function() {
-		// if(settings.stopDrawing == true) {
-		// 	window.setTimeout(startDrawing, 500)
-		// }
 		if(settings.stopDrawing == true) return
 		data.filter(function(dd) {return Number(dd.startMinute) == Number(minute)}).map(function(d) {animateLine(d)})
 		clock.setMinute(minute)
@@ -130,6 +136,12 @@ var drawLinesByMinute= function() {
 		}
 		if (minute < totalMinutes) {
 			window.setTimeout(startDrawing, 1*timeFactor)
+		}
+
+		// Go to next day 
+		else {
+			settings.dateNumber = settings.dateNumber == 365 ? 0 : settings.dateNumber +  1
+			$('#slider').slider('value', settings.dateNumber)
 		}
 	}
 	window.setTimeout(startDrawing, 500)
@@ -170,7 +182,6 @@ var animateLine = function(dat, index) {
 				var newArea = area + increase
 				var newRadius = Math.pow(newArea, .5)
 				var increment = rad > 200 ? 20 : 100
-				console.log('old radius: ', rad, ' new radius ', newRadius)
 				circles[id].setRadius(newRadius)
 			}
 		}

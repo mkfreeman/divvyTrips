@@ -48,15 +48,20 @@ body{
   right: 10px;
 }
 
-#label {
+#label, #label-date {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	width: 100%;
 	text-align: center;
 	z-index: 9999;
-	font-family:helvetica;
+	font-family:monospace;
 	font-size:40px;
 	color:rgb(212,212,212);
+}
+
+#label-date {
+	top:55%;
+	font-size:30px;
 }
 
 #label div {

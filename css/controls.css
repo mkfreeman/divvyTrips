@@ -115,3 +115,11 @@
 .leaflet-popup-tip-container {
 	width:0px;
 }
+
+#loader {
+  width: 100%;
+  text-align: center;
+  top: 55%;
+  z-index: 99999;
+  position: absolute;
+}  
