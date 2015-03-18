@@ -1,0 +1,1370 @@
+[
+  {
+    "id":5,
+    "name":"State St & Harrison St",
+    "latitude":41.88457623,
+    "longitude":-87.63188991
+  },
+  {
+    "id":13,
+    "name":"Wilton Ave & Diversey Pkwy",
+    "latitude":41.888243,
+    "longitude":-87.63639
+  },
+  {
+    "id":14,
+    "name":"Morgan St & 18th St",
+    "latitude":41.897448,
+    "longitude":-87.628722
+  },
+  {
+    "id":16,
+    "name":"Wood St & North Ave",
+    "latitude":41.894448,
+    "longitude":-87.622663
+  },
+  {
+    "id":17,
+    "name":"Wood St & Division St",
+    "latitude":41.89680204,
+    "longitude":-87.63563839
+  },
+  {
+    "id":19,
+    "name":"Loomis St & Taylor St",
+    "latitude":41.87770796,
+    "longitude":-87.63532114
+  },
+  {
+    "id":20,
+    "name":"Sheffield Ave & Kingsbury St",
+    "latitude":41.87935636,
+    "longitude":-87.62979104
+  },
+  {
+    "id":21,
+    "name":"Aberdeen St & Jackson Blvd",
+    "latitude":41.88583274,
+    "longitude":-87.64138231
+  },
+  {
+    "id":22,
+    "name":"May St & Taylor St",
+    "latitude":41.891071,
+    "longitude":-87.6122
+  },
+  {
+    "id":23,
+    "name":"Orleans St & Elm St",
+    "latitude":41.884337,
+    "longitude":-87.630183
+  },
+  {
+    "id":25,
+    "name":"Michigan Ave & Pearson St",
+    "latitude":41.91785887,
+    "longitude":-87.668919
+  },
+  {
+    "id":26,
+    "name":"McClurg Ct & Illinois St",
+    "latitude":41.968641,
+    "longitude":-87.676335
+  },
+  {
+    "id":27,
+    "name":"Larrabee St & North Ave",
+    "latitude":41.87184,
+    "longitude":-87.64664
+  },
+  {
+    "id":28,
+    "name":"Larrabee St & Menomonee St",
+    "latitude":41.8745,
+    "longitude":-87.6498
+  },
+  {
+    "id":29,
+    "name":"Noble St & Milwaukee Ave",
+    "latitude":41.865212,
+    "longitude":-87.617759
+  },
+  {
+    "id":30,
+    "name":"Ashland Ave & Augusta Blvd",
+    "latitude":41.87395806,
+    "longitude":-87.62773949
+  },
+  {
+    "id":31,
+    "name":"Franklin St & Chicago Ave",
+    "latitude":41.867173,
+    "longitude":-87.62595501
+  },
+  {
+    "id":32,
+    "name":"Racine Ave & Congress Pkwy",
+    "latitude":41.87817,
+    "longitude":-87.631985
+  },
+  {
+    "id":33,
+    "name":"State St & Van Buren St",
+    "latitude":41.891733,
+    "longitude":-87.648727
+  },
+  {
+    "id":34,
+    "name":"Cannon Dr & Fullerton Ave",
+    "latitude":41.89766,
+    "longitude":-87.62351
+  },
+  {
+    "id":36,
+    "name":"Franklin St & Jackson Blvd",
+    "latitude":41.882134,
+    "longitude":-87.625125
+  },
+  {
+    "id":37,
+    "name":"Dearborn St & Adams St",
+    "latitude":41.875885,
+    "longitude":-87.640795
+  },
+  {
+    "id":42,
+    "name":"Wabash Ave & Cermak Rd",
+    "latitude":41.90096039,
+    "longitude":-87.62377664
+  },
+  {
+    "id":43,
+    "name":"Michigan Ave & Washington St",
+    "latitude":41.88605812,
+    "longitude":-87.62428934
+  },
+  {
+    "id":44,
+    "name":"State St & Randolph St",
+    "latitude":41.89636246,
+    "longitude":-87.65406127
+  },
+  {
+    "id":45,
+    "name":"Michigan Ave & Congress Pkwy",
+    "latitude":41.893975,
+    "longitude":-87.628623
+  },
+  {
+    "id":46,
+    "name":"Wells St & Walton St",
+    "latitude":41.89993001,
+    "longitude":-87.63443007
+  },
+  {
+    "id":48,
+    "name":"Larrabee St & Kingsbury St",
+    "latitude":41.886861,
+    "longitude":-87.622694
+  },
+  {
+    "id":49,
+    "name":"Dearborn St & Monroe St",
+    "latitude":41.88132,
+    "longitude":-87.6294
+  },
+  {
+    "id":50,
+    "name":"Clark St & Congress Pkwy",
+    "latitude":41.88918,
+    "longitude":-87.6277
+  },
+  {
+    "id":51,
+    "name":"Clark St & Randolph St",
+    "latitude":41.89102,
+    "longitude":-87.6173
+  },
+  {
+    "id":52,
+    "name":"Michigan Ave & Lake St",
+    "latitude":41.894666,
+    "longitude":-87.638437
+  },
+  {
+    "id":53,
+    "name":"Wells St & Erie St",
+    "latitude":41.884078,
+    "longitude":-87.648684
+  },
+  {
+    "id":54,
+    "name":"Ogden Ave & Chicago Ave",
+    "latitude":41.871962,
+    "longitude":-87.626106
+  },
+  {
+    "id":56,
+    "name":"Desplaines St & Kinzie St",
+    "latitude":41.8807,
+    "longitude":-87.63947
+  },
+  {
+    "id":57,
+    "name":"Clinton St & Roosevelt Rd",
+    "latitude":41.881131,
+    "longitude":-87.635185
+  },
+  {
+    "id":58,
+    "name":"Marshfield Ave & Cortland St",
+    "latitude":41.91057803,
+    "longitude":-87.64942193
+  },
+  {
+    "id":59,
+    "name":"Wabash Ave & Roosevelt Rd",
+    "latitude":41.91844,
+    "longitude":-87.65222
+  },
+  {
+    "id":60,
+    "name":"Dayton St & North Ave",
+    "latitude":41.92560188,
+    "longitude":-87.65370804
+  },
+  {
+    "id":61,
+    "name":"Wood St & Milwaukee Ave",
+    "latitude":41.903456,
+    "longitude":-87.66777
+  },
+  {
+    "id":62,
+    "name":"McCormick Place",
+    "latitude":41.94688,
+    "longitude":-87.65445
+  },
+  {
+    "id":66,
+    "name":"Clinton St & Lake St",
+    "latitude":41.93250008,
+    "longitude":-87.65268082
+  },
+  {
+    "id":67,
+    "name":"Sheffield Ave & Fullerton Ave",
+    "latitude":41.936253,
+    "longitude":-87.653566
+  },
+  {
+    "id":68,
+    "name":"Clinton St & Tilden St",
+    "latitude":41.915533,
+    "longitude":-87.687051
+  },
+  {
+    "id":69,
+    "name":"Damen Ave & Pierce Ave",
+    "latitude":41.94018,
+    "longitude":-87.65304
+  },
+  {
+    "id":71,
+    "name":"Morgan St & Lake St",
+    "latitude":41.943739,
+    "longitude":-87.66402
+  },
+  {
+    "id":72,
+    "name":"State St & 16th St",
+    "latitude":41.88548331,
+    "longitude":-87.65230486
+  },
+  {
+    "id":73,
+    "name":"Jefferson St & Monroe St",
+    "latitude":41.88541,
+    "longitude":-87.66732
+  },
+  {
+    "id":74,
+    "name":"Kingsbury St & Erie St",
+    "latitude":41.965287,
+    "longitude":-87.658774
+  },
+  {
+    "id":75,
+    "name":"Canal St & Jackson Blvd",
+    "latitude":41.854564,
+    "longitude":-87.631937
+  },
+  {
+    "id":76,
+    "name":"Lake Shore Dr & Monroe St",
+    "latitude":41.87464,
+    "longitude":-87.65703
+  },
+  {
+    "id":77,
+    "name":"Clinton St & Madison St",
+    "latitude":41.946176,
+    "longitude":-87.673308
+  },
+  {
+    "id":80,
+    "name":"Aberdeen St & Madison St",
+    "latitude":41.871514,
+    "longitude":-87.669886
+  },
+  {
+    "id":84,
+    "name":"Union Ave & Grand Ave",
+    "latitude":41.922695,
+    "longitude":-87.697153
+  },
+  {
+    "id":85,
+    "name":"Michigan Ave & Oak St",
+    "latitude":41.929567,
+    "longitude":-87.707857
+  },
+  {
+    "id":86,
+    "name":"Eckhart Park",
+    "latitude":41.816499,
+    "longitude":-87.606582
+  },
+  {
+    "id":87,
+    "name":"Racine Ave & Fullerton Ave",
+    "latitude":41.95469,
+    "longitude":-87.67393
+  },
+  {
+    "id":88,
+    "name":"May St & Randolph St",
+    "latitude":41.857901,
+    "longitude":-87.668745
+  },
+  {
+    "id":90,
+    "name":"Millennium Park",
+    "latitude":41.809851,
+    "longitude":-87.616279
+  },
+  {
+    "id":91,
+    "name":"Clinton St & Washington Blvd",
+    "latitude":41.85394,
+    "longitude":-87.685243
+  },
+  {
+    "id":92,
+    "name":"Carpenter St & Huron St",
+    "latitude":41.961626,
+    "longitude":-87.674101
+  },
+  {
+    "id":93,
+    "name":"Sheffield Ave & Willow St",
+    "latitude":41.967094,
+    "longitude":-87.679028
+  },
+  {
+    "id":97,
+    "name":"Museum Campus",
+    "latitude":41.8378,
+    "longitude":-87.65114
+  },
+  {
+    "id":98,
+    "name":"LaSalle St & Washington St",
+    "latitude":41.847203,
+    "longitude":-87.646795
+  },
+  {
+    "id":99,
+    "name":"Lake Shore Dr & Ohio St",
+    "latitude":41.857499,
+    "longitude":-87.646277
+  },
+  {
+    "id":106,
+    "name":"State St & Pearson St",
+    "latitude":41.85137517,
+    "longitude":-87.61883465
+  },
+  {
+    "id":108,
+    "name":"Halsted St & Polk St",
+    "latitude":41.972972,
+    "longitude":-87.659637
+  },
+  {
+    "id":109,
+    "name":"900 W Harrison",
+    "latitude":41.978353,
+    "longitude":-87.659753
+  },
+  {
+    "id":112,
+    "name":"Green St & Randolph St",
+    "latitude":41.966555,
+    "longitude":-87.688487
+  },
+  {
+    "id":117,
+    "name":"Wilton Ave & Belmont Ave",
+    "latitude":41.809443,
+    "longitude":-87.591875
+  },
+  {
+    "id":119,
+    "name":"Ashland Ave & Lake St",
+    "latitude":41.793242,
+    "longitude":-87.587782
+  },
+  {
+    "id":122,
+    "name":"Ogden Ave & Congress Pkwy",
+    "latitude":41.87501,
+    "longitude":-87.67328
+  },
+  {
+    "id":123,
+    "name":"California Ave & Milwaukee Ave",
+    "latitude":41.93262,
+    "longitude":-87.642385
+  },
+  {
+    "id":124,
+    "name":"Damen Ave & Cullerton St",
+    "latitude":41.92675599,
+    "longitude":-87.63442878
+  },
+  {
+    "id":126,
+    "name":"Clark St & North Ave",
+    "latitude":41.962391,
+    "longitude":-87.684146
+  },
+  {
+    "id":127,
+    "name":"Lincoln Ave & Fullerton Ave",
+    "latitude":41.943662,
+    "longitude":-87.648917
+  },
+  {
+    "id":128,
+    "name":"Damen Ave & Chicago Ave",
+    "latitude":41.911791,
+    "longitude":-87.631841
+  },
+  {
+    "id":130,
+    "name":"Damen Ave & Division St",
+    "latitude":41.96167,
+    "longitude":-87.65464
+  },
+  {
+    "id":131,
+    "name":"Lincoln Ave & Belmont Ave",
+    "latitude":41.925905,
+    "longitude":-87.64926
+  },
+  {
+    "id":132,
+    "name":"Wentworth Ave & 24th St",
+    "latitude":41.895769,
+    "longitude":-87.67722
+  },
+  {
+    "id":134,
+    "name":"Peoria St & Jackson Blvd",
+    "latitude":41.88137,
+    "longitude":-87.67493
+  },
+  {
+    "id":135,
+    "name":"Halsted St & 21st St",
+    "latitude":41.857556,
+    "longitude":-87.661535
+  },
+  {
+    "id":136,
+    "name":"Racine Ave & 13th St",
+    "latitude":41.90331,
+    "longitude":-87.67695
+  },
+  {
+    "id":137,
+    "name":"Morgan Ave & 14th Pl",
+    "latitude":41.937739,
+    "longitude":-87.644094
+  },
+  {
+    "id":138,
+    "name":"Clybourn Ave & Division St",
+    "latitude":41.87811421,
+    "longitude":-87.63997112
+  },
+  {
+    "id":140,
+    "name":"Dearborn Pkwy & Delaware Pl",
+    "latitude":41.939365,
+    "longitude":-87.668385
+  },
+  {
+    "id":141,
+    "name":"Clark St & Lincoln Ave",
+    "latitude":41.89122,
+    "longitude":-87.67686
+  },
+  {
+    "id":143,
+    "name":"Sedgwick St & Webster Ave",
+    "latitude":41.9406,
+    "longitude":-87.6785
+  },
+  {
+    "id":144,
+    "name":"Larrabee St & Webster Ave",
+    "latitude":41.943403,
+    "longitude":-87.679618
+  },
+  {
+    "id":146,
+    "name":"Loomis St & Jackson Blvd",
+    "latitude":41.918273,
+    "longitude":-87.638116
+  },
+  {
+    "id":147,
+    "name":"Indiana Ave & 26th St",
+    "latitude":41.925858,
+    "longitude":-87.638973
+  },
+  {
+    "id":148,
+    "name":"State St & 33rd St",
+    "latitude":41.86012138,
+    "longitude":-87.62772919
+  },
+  {
+    "id":149,
+    "name":"Calumet Ave & 33rd St",
+    "latitude":41.849237,
+    "longitude":-87.631715
+  },
+  {
+    "id":150,
+    "name":"Fort Dearborn Dr & 31st St",
+    "latitude":41.857937,
+    "longitude":-87.623633
+  },
+  {
+    "id":154,
+    "name":"Southport Ave & Belmont Ave",
+    "latitude":41.90959193,
+    "longitude":-87.65349723
+  },
+  {
+    "id":156,
+    "name":"Clark St & Wellington Ave",
+    "latitude":41.881487,
+    "longitude":-87.654752
+  },
+  {
+    "id":157,
+    "name":"Lake Shore Dr & Wellington Ave",
+    "latitude":41.87772613,
+    "longitude":-87.65478743
+  },
+  {
+    "id":158,
+    "name":"Milwaukee Ave & Wabansia Ave",
+    "latitude":41.877749,
+    "longitude":-87.649633
+  },
+  {
+    "id":159,
+    "name":"Claremont Ave & Hirsch St",
+    "latitude":41.88175,
+    "longitude":-87.6478
+  },
+  {
+    "id":160,
+    "name":"Campbell Ave & North Ave",
+    "latitude":41.8694821,
+    "longitude":-87.6554864
+  },
+  {
+    "id":162,
+    "name":"Damen Ave & Wellington Ave",
+    "latitude":41.85378,
+    "longitude":-87.64665
+  },
+  {
+    "id":163,
+    "name":"Damen Ave & Clybourn Ave",
+    "latitude":41.858086,
+    "longitude":-87.651073
+  },
+  {
+    "id":164,
+    "name":"Franklin St & Lake St",
+    "latitude":41.85818061,
+    "longitude":-87.65648665
+  },
+  {
+    "id":165,
+    "name":"Clark St & Grace St",
+    "latitude":41.865054,
+    "longitude":-87.656959
+  },
+  {
+    "id":166,
+    "name":"Ashland Ave & Wrightwood Ave",
+    "latitude":41.865861,
+    "longitude":-87.646611
+  },
+  {
+    "id":168,
+    "name":"Michigan Ave & 14th St",
+    "latitude":41.871737,
+    "longitude":-87.65103
+  },
+  {
+    "id":169,
+    "name":"Canal St & Harrison St",
+    "latitude":41.862378,
+    "longitude":-87.651062
+  },
+  {
+    "id":170,
+    "name":"Clinton St & 18th St",
+    "latitude":41.85323876,
+    "longitude":-87.62533709
+  },
+  {
+    "id":171,
+    "name":"May St & Cullerton St",
+    "latitude":41.904509,
+    "longitude":-87.6405
+  },
+  {
+    "id":173,
+    "name":"Mies van der Rohe Way & Chicago Ave",
+    "latitude":41.899007,
+    "longitude":-87.629928
+  },
+  {
+    "id":174,
+    "name":"Canal St & Madison St",
+    "latitude":41.91021,
+    "longitude":-87.6435
+  },
+  {
+    "id":176,
+    "name":"Clark St & Elm St",
+    "latitude":41.90854,
+    "longitude":-87.648568
+  },
+  {
+    "id":179,
+    "name":"MLK Jr Dr & Oakwood Blvd",
+    "latitude":41.915689,
+    "longitude":-87.6346
+  },
+  {
+    "id":181,
+    "name":"LaSalle St & Illinois St",
+    "latitude":41.913778,
+    "longitude":-87.64884
+  },
+  {
+    "id":184,
+    "name":"State St & 35th St",
+    "latitude":41.91797,
+    "longitude":-87.64368
+  },
+  {
+    "id":185,
+    "name":"Stave St & Armitage Ave",
+    "latitude":41.918216,
+    "longitude":-87.656936
+  },
+  {
+    "id":186,
+    "name":"Ogden Ave & Race Ave",
+    "latitude":41.921004,
+    "longitude":-87.663257
+  },
+  {
+    "id":188,
+    "name":"Greenview Ave & Fullerton Ave",
+    "latitude":41.921687,
+    "longitude":-87.653714
+  },
+  {
+    "id":190,
+    "name":"Southport Ave & Wrightwood Ave",
+    "latitude":41.913688,
+    "longitude":-87.652855
+  },
+  {
+    "id":191,
+    "name":"Canal St & Monroe St",
+    "latitude":41.92197,
+    "longitude":-87.63854
+  },
+  {
+    "id":192,
+    "name":"Canal St & Adams St",
+    "latitude":41.919936,
+    "longitude":-87.64883
+  },
+  {
+    "id":193,
+    "name":"State St & 29th St",
+    "latitude":41.92175,
+    "longitude":-87.64401
+  },
+  {
+    "id":194,
+    "name":"Wabash Ave & Wacker Pl",
+    "latitude":41.891795,
+    "longitude":-87.658751
+  },
+  {
+    "id":196,
+    "name":"Cityfront Plaza Dr & Pioneer Ct",
+    "latitude":41.894556,
+    "longitude":-87.653449
+  },
+  {
+    "id":197,
+    "name":"Michigan Ave & Madison St",
+    "latitude":41.886773,
+    "longitude":-87.656001
+  },
+  {
+    "id":200,
+    "name":"MLK Jr Dr & 47th St",
+    "latitude":41.907993,
+    "longitude":-87.631501
+  },
+  {
+    "id":206,
+    "name":"Halsted St & Archer Ave",
+    "latitude":41.877945,
+    "longitude":-87.662007
+  },
+  {
+    "id":208,
+    "name":"Ashland Ave & 21st St",
+    "latitude":41.933341,
+    "longitude":-87.648747
+  },
+  {
+    "id":209,
+    "name":"Normal Ave & Archer Ave",
+    "latitude":41.929546,
+    "longitude":-87.643118
+  },
+  {
+    "id":210,
+    "name":"Ashland Ave & Division St",
+    "latitude":41.929143,
+    "longitude":-87.649077
+  },
+  {
+    "id":211,
+    "name":"St Clair St & Erie St",
+    "latitude":41.928712,
+    "longitude":-87.653833
+  },
+  {
+    "id":212,
+    "name":"Wells St & Hubbard St",
+    "latitude":41.8457,
+    "longitude":-87.62248
+  },
+  {
+    "id":213,
+    "name":"Leavitt St & North Ave",
+    "latitude":41.841707,
+    "longitude":-87.626938
+  },
+  {
+    "id":214,
+    "name":"Damen Ave & Grand Ave",
+    "latitude":41.842052,
+    "longitude":-87.617
+  },
+  {
+    "id":215,
+    "name":"Damen Ave & Madison St",
+    "latitude":41.836208,
+    "longitude":-87.613533
+  },
+  {
+    "id":216,
+    "name":"California Ave & Division St",
+    "latitude":41.834734,
+    "longitude":-87.625813
+  },
+  {
+    "id":217,
+    "name":"May St & Fulton St",
+    "latitude":41.8349,
+    "longitude":-87.61793
+  },
+  {
+    "id":219,
+    "name":"Damen Ave & Cortland St",
+    "latitude":41.838842,
+    "longitude":-87.621857
+  },
+  {
+    "id":220,
+    "name":"Hampden Ct & Diversey Pkwy",
+    "latitude":41.838556,
+    "longitude":-87.608218
+  },
+  {
+    "id":223,
+    "name":"Clifton Ave & Armitage Ave",
+    "latitude":41.910329,
+    "longitude":-87.672516
+  },
+  {
+    "id":224,
+    "name":"Halsted St & Willow St",
+    "latitude":41.907066,
+    "longitude":-87.667252
+  },
+  {
+    "id":226,
+    "name":"Racine Ave & Belmont Ave",
+    "latitude":41.932225,
+    "longitude":-87.658617
+  },
+  {
+    "id":228,
+    "name":"Damen Ave & Melrose Ave",
+    "latitude":41.93584,
+    "longitude":-87.6637
+  },
+  {
+    "id":229,
+    "name":"Southport Ave & Roscoe St",
+    "latitude":41.93949,
+    "longitude":-87.66378
+  },
+  {
+    "id":230,
+    "name":"Lincoln Ave & Roscoe St",
+    "latitude":41.939743,
+    "longitude":-87.658865
+  },
+  {
+    "id":232,
+    "name":"Pine Grove Ave & Waveland Ave",
+    "latitude":41.93649682,
+    "longitude":-87.64753866
+  },
+  {
+    "id":233,
+    "name":"Sangamon St & Washington Blvd",
+    "latitude":41.940775,
+    "longitude":-87.639192
+  },
+  {
+    "id":234,
+    "name":"Clark St & Montrose Ave",
+    "latitude":41.936669,
+    "longitude":-87.636794
+  },
+  {
+    "id":237,
+    "name":"MLK Jr Dr & 29th St",
+    "latitude":41.96583,
+    "longitude":-87.68651
+  },
+  {
+    "id":239,
+    "name":"Western Ave & Leland Ave",
+    "latitude":41.967096,
+    "longitude":-87.667429
+  },
+  {
+    "id":241,
+    "name":"Morgan St & Polk St",
+    "latitude":41.902893,
+    "longitude":-87.687275
+  },
+  {
+    "id":242,
+    "name":"Damen Ave & Leland Ave",
+    "latitude":41.920195,
+    "longitude":-87.693033
+  },
+  {
+    "id":243,
+    "name":"Lincoln Ave & Leavitt St",
+    "latitude":41.912616,
+    "longitude":-87.681391
+  },
+  {
+    "id":244,
+    "name":"Ravenswood Ave & Irving Park Rd",
+    "latitude":41.910652,
+    "longitude":-87.6824
+  },
+  {
+    "id":245,
+    "name":"Clarendon Ave & Junior Ter",
+    "latitude":41.907781,
+    "longitude":-87.685854
+  },
+  {
+    "id":246,
+    "name":"Ashland Ave & Belle Plaine Ave",
+    "latitude":41.90332,
+    "longitude":-87.67273
+  },
+  {
+    "id":247,
+    "name":"Shore Drive & 55th St",
+    "latitude":41.895966,
+    "longitude":-87.667747
+  },
+  {
+    "id":248,
+    "name":"Woodlawn Ave & 55th St",
+    "latitude":41.899643,
+    "longitude":-87.6677
+  },
+  {
+    "id":249,
+    "name":"Montrose Harbor",
+    "latitude":41.956061,
+    "longitude":-87.668869
+  },
+  {
+    "id":250,
+    "name":"Ashland Ave & Wellington Ave",
+    "latitude":41.961507,
+    "longitude":-87.671387
+  },
+  {
+    "id":251,
+    "name":"Clarendon Ave & Leland Ave",
+    "latitude":41.957921,
+    "longitude":-87.673567
+  },
+  {
+    "id":252,
+    "name":"Greenwood Ave & 47th St",
+    "latitude":41.955927,
+    "longitude":-87.679259
+  },
+  {
+    "id":253,
+    "name":"Clifton Ave & Lawrence Ave",
+    "latitude":41.94911,
+    "longitude":-87.675112
+  },
+  {
+    "id":255,
+    "name":"Indiana Ave & Roosevelt Rd",
+    "latitude":41.906717,
+    "longitude":-87.682779
+  },
+  {
+    "id":256,
+    "name":"Broadway & Sheridan Rd",
+    "latitude":41.903029,
+    "longitude":-87.697474
+  },
+  {
+    "id":257,
+    "name":"Lincoln Ave & Waveland Ave",
+    "latitude":41.910535,
+    "longitude":-87.689556
+  },
+  {
+    "id":258,
+    "name":"Logan Blvd & Elston Ave",
+    "latitude":41.91044,
+    "longitude":-87.6972
+  },
+  {
+    "id":259,
+    "name":"California Ave & Francis Pl",
+    "latitude":41.91855,
+    "longitude":-87.69723
+  },
+  {
+    "id":262,
+    "name":"Halsted St & 37th St",
+    "latitude":41.89186,
+    "longitude":-87.62062
+  },
+  {
+    "id":263,
+    "name":"Rhodes Ave & 32nd St",
+    "latitude":41.8853,
+    "longitude":-87.62077
+  },
+  {
+    "id":264,
+    "name":"Stetson Ave & South Water St",
+    "latitude":41.892238,
+    "longitude":-87.633985
+  },
+  {
+    "id":265,
+    "name":"Cottage Grove Ave & Oakwood Blvd",
+    "latitude":41.89384315,
+    "longitude":-87.64185116
+  },
+  {
+    "id":268,
+    "name":"Lake Shore Dr & North Blvd",
+    "latitude":41.93588,
+    "longitude":-87.67842
+  },
+  {
+    "id":271,
+    "name":"Cottage Grove Ave & 43rd St",
+    "latitude":41.93186,
+    "longitude":-87.67079
+  },
+  {
+    "id":272,
+    "name":"Indiana Ave & 31st St",
+    "latitude":41.885837,
+    "longitude":-87.6355
+  },
+  {
+    "id":273,
+    "name":"Michigan Ave & 18th St",
+    "latitude":41.947836,
+    "longitude":-87.645416
+  },
+  {
+    "id":275,
+    "name":"Ashland Ave & 13th St",
+    "latitude":41.94893,
+    "longitude":-87.65775
+  },
+  {
+    "id":276,
+    "name":"California Ave & North Ave",
+    "latitude":41.93132,
+    "longitude":-87.638742
+  },
+  {
+    "id":277,
+    "name":"Ashland Ave & Grand Ave",
+    "latitude":41.940106,
+    "longitude":-87.645451
+  },
+  {
+    "id":278,
+    "name":"Wallace Ave & 35th St",
+    "latitude":41.945512,
+    "longitude":-87.64598
+  },
+  {
+    "id":282,
+    "name":"Halsted St & Maxwell St",
+    "latitude":41.91468,
+    "longitude":-87.64332
+  },
+  {
+    "id":284,
+    "name":"Michigan Ave & Jackson Blvd",
+    "latitude":41.871262,
+    "longitude":-87.673688
+  },
+  {
+    "id":285,
+    "name":"Wood St & Grand Ave",
+    "latitude":41.869154,
+    "longitude":-87.671045
+  },
+  {
+    "id":286,
+    "name":"Franklin St & Quincy St",
+    "latitude":41.917805,
+    "longitude":-87.682437
+  },
+  {
+    "id":288,
+    "name":"Larrabee St & Armitage Ave",
+    "latitude":41.920082,
+    "longitude":-87.677855
+  },
+  {
+    "id":289,
+    "name":"Wells St & Concord Ln",
+    "latitude":41.89637337,
+    "longitude":-87.66098386
+  },
+  {
+    "id":290,
+    "name":"Kedzie Ave & Palmer Ct",
+    "latitude":41.90068,
+    "longitude":-87.6626
+  },
+  {
+    "id":292,
+    "name":"Southport Ave & Clark St",
+    "latitude":41.921525,
+    "longitude":-87.707322
+  },
+  {
+    "id":294,
+    "name":"Broadway & Berwyn Ave",
+    "latitude":41.932595,
+    "longitude":-87.665939
+  },
+  {
+    "id":295,
+    "name":"Broadway & Argyle St",
+    "latitude":41.92533,
+    "longitude":-87.6658
+  },
+  {
+    "id":296,
+    "name":"Broadway & Belmont Ave",
+    "latitude":41.92883,
+    "longitude":-87.668507
+  },
+  {
+    "id":297,
+    "name":"Paulina St & Montrose Ave",
+    "latitude":41.928887,
+    "longitude":-87.658971
+  },
+  {
+    "id":298,
+    "name":"Lincoln Ave & Belle Plaine Ave",
+    "latitude":41.92888,
+    "longitude":-87.66317
+  },
+  {
+    "id":300,
+    "name":"Broadway & Barry Ave",
+    "latitude":41.88105,
+    "longitude":-87.61697
+  },
+  {
+    "id":301,
+    "name":"Clark St & Schiller St",
+    "latitude":41.8815824,
+    "longitude":-87.64127743
+  },
+  {
+    "id":302,
+    "name":"Sheffield Ave & Wrightwood Ave",
+    "latitude":41.906724,
+    "longitude":-87.63483
+  },
+  {
+    "id":303,
+    "name":"Broadway & Cornelia Ave",
+    "latitude":41.896544,
+    "longitude":-87.630931
+  },
+  {
+    "id":304,
+    "name":"Halsted St & Waveland Ave",
+    "latitude":41.861267,
+    "longitude":-87.656625
+  },
+  {
+    "id":306,
+    "name":"Sheridan Rd & Buena Ave",
+    "latitude":41.8492,
+    "longitude":-87.67564
+  },
+  {
+    "id":307,
+    "name":"Southport Ave & Clybourn Ave",
+    "latitude":41.85381,
+    "longitude":-87.665897
+  },
+  {
+    "id":308,
+    "name":"Seeley Ave & Roscoe St",
+    "latitude":41.849527,
+    "longitude":-87.640591
+  },
+  {
+    "id":309,
+    "name":"Leavitt St & Armitage Ave",
+    "latitude":41.867888,
+    "longitude":-87.623041
+  },
+  {
+    "id":310,
+    "name":"Damen Ave & Charleston St",
+    "latitude":41.864059,
+    "longitude":-87.623727
+  },
+  {
+    "id":315,
+    "name":"Leavitt St & Hirsch St",
+    "latitude":41.96325,
+    "longitude":-87.679258
+  },
+  {
+    "id":316,
+    "name":"Damen Ave & Sunnyside Ave",
+    "latitude":41.961588,
+    "longitude":-87.666036
+  },
+  {
+    "id":317,
+    "name":"Wood St & Taylor St",
+    "latitude":41.957081,
+    "longitude":-87.664199
+  },
+  {
+    "id":319,
+    "name":"Greenview Ave & Diversey Pkwy",
+    "latitude":41.950687,
+    "longitude":-87.6687
+  },
+  {
+    "id":321,
+    "name":"Wabash Ave & 8th St",
+    "latitude":41.954177,
+    "longitude":-87.664358
+  },
+  {
+    "id":323,
+    "name":"Sheridan Rd & Lawrence Ave",
+    "latitude":41.952833,
+    "longitude":-87.649993
+  },
+  {
+    "id":324,
+    "name":"Stockton Dr & Wrightwood Ave",
+    "latitude":41.954383,
+    "longitude":-87.648043
+  },
+  {
+    "id":325,
+    "name":"Clark St & Winnemac Ave",
+    "latitude":41.949333,
+    "longitude":-87.649634
+  },
+  {
+    "id":326,
+    "name":"Clark St & Leland Ave",
+    "latitude":41.874337,
+    "longitude":-87.639566
+  },
+  {
+    "id":327,
+    "name":"Sheffield Ave & Webster Ave",
+    "latitude":41.86711778,
+    "longitude":-87.64108796
+  },
+  {
+    "id":328,
+    "name":"Ellis Ave & 58th St",
+    "latitude":41.911722,
+    "longitude":-87.626804
+  },
+  {
+    "id":329,
+    "name":"Lake Shore Dr & Diversey Pkwy",
+    "latitude":41.85795,
+    "longitude":-87.640826
+  },
+  {
+    "id":331,
+    "name":"Halsted St & Blackhawk St",
+    "latitude":41.855136,
+    "longitude":-87.654127
+  },
+  {
+    "id":332,
+    "name":"Halsted St & Diversey Pkwy",
+    "latitude":41.872187,
+    "longitude":-87.661501
+  },
+  {
+    "id":337,
+    "name":"Clark St & Chicago Ave",
+    "latitude":41.89257,
+    "longitude":-87.614492
+  },
+  {
+    "id":338,
+    "name":"Calumet Ave & 18th St",
+    "latitude":41.89691,
+    "longitude":-87.621743
+  },
+  {
+    "id":339,
+    "name":"Emerald Ave & 31st St",
+    "latitude":41.887155,
+    "longitude":-87.62775
+  },
+  {
+    "id":340,
+    "name":"Clark St & Wrightwood Ave",
+    "latitude":41.87785,
+    "longitude":-87.62408
+  },
+  {
+    "id":341,
+    "name":"Adler Planetarium",
+    "latitude":41.882091,
+    "longitude":-87.639833
+  },
+  {
+    "id":344,
+    "name":"Ravenswood Ave & Lawrence Ave",
+    "latitude":41.872373,
+    "longitude":-87.633523
+  },
+  {
+    "id":345,
+    "name":"Lake Park Ave & 56th St",
+    "latitude":41.831379,
+    "longitude":-87.618034
+  },
+  {
+    "id":346,
+    "name":"Ada St & Washington Blvd",
+    "latitude":41.822985,
+    "longitude":-87.6071
+  },
+  {
+    "id":347,
+    "name":"Ashland Ave & Grace St",
+    "latitude":41.932684,
+    "longitude":-87.63625
+  },
+  {
+    "id":349,
+    "name":"Halsted St & Wrightwood Ave",
+    "latitude":41.903233,
+    "longitude":-87.631253
+  },
+  {
+    "id":350,
+    "name":"Ashland Ave & Chicago Ave",
+    "latitude":41.926277,
+    "longitude":-87.630834
+  }
+]

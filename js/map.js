@@ -4,6 +4,7 @@ var circles = {}
 var lineGroup = L.layerGroup([]);
 var circleGroup = L.layerGroup([]);
 stationValues = {}
+var test;
 
 // Resize height
 $(window).resize(function() {setHeight()})
@@ -49,7 +50,7 @@ var drawMap = function () {
 
 // Get stations
 var getStations = function(callback) {
-	d3.csv(settings.stationFile, function(error, dat){
+	d3.json(settings.stationFile, function(error, dat){
 		stations = dat.filter(function(d){return d.quarters = 'second'})
 		if(typeof callback == 'function') callback()
 	})
@@ -64,7 +65,7 @@ var getData = function(callback) {
 	$('#loader').show()
 // load first one from csv to limit database hits
 	if(d3.keys(settings.data).length == 0 ){
-		d3.csv(settings.dataFile, function(error, dat){
+		d3.json(settings.dataFile, function(error, dat){
 			$('#loader').hide()
 			data = settings.data[settings.date] = dat
 			if(typeof callback == 'function') callback()
