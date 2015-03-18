@@ -27,7 +27,7 @@ var setControls = function () {
             $(".ui-slider-handle").text(dateLabel)
         }
     })
-    $(".ui-slider-handle").text('6/23/14')
+    $(".ui-slider-handle").text('4/22/14')
 
     $('button').on('click', function(a) {
 	 	var id = $(this).attr('id')

@@ -41,8 +41,9 @@ var drawMap = function () {
 	// Write label
 	d3.select('#label-left').append('text').text('CHICAGO')
 	d3.select('#label-middle').append('text').text('BIKERS')
-	d3.select('#label-date').append('text').text('(6/23/2014)')
-	window.setTimeout(function() {d3.selectAll('#label, #label-date').transition().duration(2000).style('opacity', 0).each('end', function() {d3.select(this).style('display', 'none'); drawLinesByMinute()})}, 2000)
+	d3.select('#label-date').append('text').text('(4/22/2014)')
+	window.setTimeout(function() {d3.selectAll('#label, #label-date').transition().duration(2000).style('opacity', 0).each('end', function() {d3.select(this).style('display', 'none');})}, 2000)
+	window.setTimeout(function() {drawLinesByMinute()}, 2000)
 	if(settings.drawStations == true) drawStations()
 }
 
@@ -141,7 +142,7 @@ var drawLinesByMinute= function() {
 		// Go to next day 
 		else {
 			settings.dateNumber = settings.dateNumber == 365 ? 0 : settings.dateNumber +  1
-			$('#slider').slider('value', settings.dateNumber)
+			setTimeout(function() {$('#slider').slider('value', settings.dateNumber)}, 3000)
 		}
 	}
 	window.setTimeout(startDrawing, 500)
