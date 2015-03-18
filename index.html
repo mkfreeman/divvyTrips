@@ -24,10 +24,12 @@
         <link href='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.css' rel='stylesheet' />
         <script type="text/javascript" src="js/settings.js"></script>
         <script type="text/javascript" src="js/map.js"></script>
+        <script type="text/javascript" src="js/controls.js"></script>
         <script type="text/javascript" src="js/clock.js"></script>
 
         <!-- CSS files -->
         <link rel="stylesheet" href="css/map.css"></link>
+        <link rel="stylesheet" href="css/controls.css"></link>
         <link rel="stylesheet" href="css/clock.css"></link>
         
 	</head>
@@ -55,37 +57,22 @@
             <div id="label-right"></div>
         </div>
 		<div id="container">
+            <div id="controls">
+                <button  id='riders' class="active" style="background: url(images/routes.png)"></button>
+                <button  id='stations' class="active" style="background: url(images/stations.png)"></button>
+                <button  id='maptiles' class="passive" style="background: url(images/streets.png)"></button>
+            </div>
         </div>
         <div id="slider" class="arrow_box"></div>
          <script type="text/javascript">
+            clickfunction = function() {
+                console.log('click ', this)
+            }
             getStations(function() {
                 getData(drawMap)
             })
             var clock =  new Clock()
-            var start = new Date('01-01-2014')
-            var end = new Date('12-31-2014')
-            var dateScale = d3.time.scale().domain([1,365]).range([start,end])
-            $('#slider').slider({
-                min:1, 
-                value:150,
-                max:365,
-                change:function(event, ui){
-                    console.log(ui.value)
-                    d3.selectAll('#map path').style("opacity", 0)
-                    clock.setMinute(0)
-                    settings.stopDrawing = true
-                    var date = new Date(ui.value)
-                    settings.date = (1+date.getMonth()) + '-' + date.getDate() + '-2014'
-                    settings.date = '2014-6-30'
-                    getData(drawLinesByMinute)
-                }, 
-                slide:function(event, ui){
-                    var date = new Date(dateScale(ui.value))
-                    settings.date = (1+date.getMonth()) + '/' + date.getDate() + '/14'
-                    $(".ui-slider-handle").text(settings.date)
-                }
-            })
-            $(".ui-slider-handle").text('6/28/14')
+            setControls()
          </script>
          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </body>

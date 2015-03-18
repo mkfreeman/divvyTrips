@@ -1,4 +1,5 @@
 var settings = {
+	data:{},
 	container:'container', 
 	id:'map',
 	accessToken:'pk.eyJ1IjoibWljaGFlbGZyZWVtYW4iLCJhIjoibE5leG9MRSJ9.YHTl3OfWurGattFSUzwhag',
@@ -13,11 +14,11 @@ var settings = {
 	widthRange:[1,20],
 	showMap:false, 
 	dataFile:'data/data_start_stop.csv',
-	stationFile:'data/all_stations.csv',
+	stationFile:'data/new_stations.csv',
 	color:'#2FCAFC', 
 	backgroundColor:'black', 
-	dataSource:'csv',
-	timeFactor:150,
+	dataSource:'database',
+	timeFactor:250,
 	maxSpeed:10,
 	speedChange: -1,
 	interval:10000, 
@@ -34,5 +35,6 @@ var settings = {
 	maxRadius:500, 
 	growCircles: true,
 	circleIncrement:1,
+	startRadius:50
 
 }
