@@ -9,13 +9,6 @@
         <script src="https://d3js.org/d3.v3.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-        <!-- Jquery UI -->
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-
-
-
-        
          <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css" />
          <script src='https://api.tiles.mapbox.com/mapbox.js/v2.1.5/mapbox.js'></script>
@@ -35,7 +28,7 @@
 	<body>
         <div id='header'>
             <div id="top-right">
-                <a href="https://twitter.com/mf_viz" class="twitter-follow-button" data-show-count="false">Follow @mf_viz</a>
+                <a href="https://github.com/mkfreeman/divvyTrips" target="_blank">View on GitHub</a>
             </div>
             <a href="https://divvybikes.com/datachallenge" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="165.38px" height="46.241px" viewBox="0 0 165.38 46.241" enable-background="new 0 0 165.38 46.241" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace">
@@ -65,7 +58,6 @@
                 <button  id='maptiles' class="passive" style="background: url(images/streets.png)"></button>
             </div>
         </div>
-        <div id="slider" class="arrow_box"></div>
          <script type="text/javascript">
             clickfunction = function() {
                 console.log('click ', this)
@@ -76,6 +68,5 @@
             var clock =  new Clock()
             setControls()
          </script>
-         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
     </body>
 </html>

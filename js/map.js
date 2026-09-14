@@ -140,10 +140,13 @@ var drawLinesByMinute= function() {
 			window.setTimeout(startDrawing, 1*timeFactor)
 		}
 
-		// Go to next day 
+		// Loop back to the start of the day
 		else {
-			settings.dateNumber = settings.dateNumber == 365 ? 0 : settings.dateNumber +  1
-			setTimeout(function() {$('#slider').slider('value', settings.dateNumber)}, 3000)
+			setTimeout(function() {
+				reset()
+				timeFactor = settings.timeFactor
+				drawLinesByMinute()
+			}, 3000)
 		}
 	}
 	window.setTimeout(startDrawing, 500)
